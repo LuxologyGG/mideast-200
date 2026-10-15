@@ -1,0 +1,752 @@
+{
+  "periods": [
+    {
+      "id": "neolithic",
+      "name": "Neolithic",
+      "date": "~10,000 BCE – ~3,000 BCE",
+      "startYear": -10000,
+      "endYear": -3000,
+      "type": "period",
+      "location": "Middle East",
+      "details": [
+        "The guide dates this as the longest listed span, roughly 10,000–3,000 BCE.",
+        "It ends around Uruk; agriculture, domestication, and towns developed across this long span."
+      ],
+      "significance": "Frames the long transition toward more settled agricultural communities.",
+      "periodId": "neolithic",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "uruk",
+      "name": "Uruk Period (Mesopotamia)",
+      "date": "~4,000 BCE – ~3,000 BCE",
+      "startYear": -4000,
+      "endYear": -3000,
+      "type": "period",
+      "location": "Mesopotamia",
+      "details": [
+        "The period saw some of the earliest cities and state formation in Mesopotamia.",
+        "Proto-writing and accounting practices developed alongside large-scale provisioning."
+      ],
+      "significance": "A key period for early urban organization and record keeping.",
+      "periodId": "uruk",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "old-kingdom",
+      "name": "Old Kingdom, Egypt",
+      "date": "~2600–2100 BCE",
+      "startYear": -2600,
+      "endYear": -2100,
+      "type": "period",
+      "location": "Egypt",
+      "details": [
+        "Egyptian pyramid age, including Khufu’s Great Pyramid at Giza.",
+        "Monumental construction reflects the state’s capacity to organize labor."
+      ],
+      "significance": "Shows the scale of royal monuments and state organization.",
+      "periodId": "old-kingdom",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "old-babylonian",
+      "name": "Old Babylonian Period (Mesopotamia)",
+      "date": "2000–1600 BCE",
+      "startYear": -2000,
+      "endYear": -1600,
+      "type": "period",
+      "location": "Mesopotamia",
+      "details": [
+        "Hammurabi ruled in this period and commissioned his famous stele.",
+        "The stele is royal propaganda; earlier law collections existed."
+      ],
+      "significance": "Places Hammurabi’s royal justice claims in their historical context.",
+      "periodId": "old-babylonian",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "new-kingdom",
+      "name": "New Kingdom, Egypt",
+      "date": "1550–1100 BCE",
+      "startYear": -1550,
+      "endYear": -1100,
+      "type": "period",
+      "location": "Egypt",
+      "details": [
+        "Akhenaten founded Amarna as a new capital focused on the Aten.",
+        "The royal family’s Aten imagery reflects religious and artistic change."
+      ],
+      "significance": "Connects imperial Egypt with Amarna’s royal and religious changes.",
+      "periodId": "new-kingdom",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "napatan",
+      "name": "Early and Middle Napatan Period, Sudan",
+      "date": "~1100–650 BCE",
+      "startYear": -1100,
+      "endYear": -650,
+      "type": "period",
+      "location": "Sudan",
+      "details": [
+        "The guide describes a strong Kushite kingdom at Napata.",
+        "Napatan rulers eventually challenged Assyrians for control of the southern Levant."
+      ],
+      "significance": "Shows Kush as a regional power interacting with Egypt and Assyria.",
+      "periodId": "napatan",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "neo-assyrian",
+      "name": "Neo-Assyrian Period",
+      "date": "900–610 BCE",
+      "startYear": -900,
+      "endYear": -610,
+      "type": "period",
+      "location": "Mesopotamia",
+      "details": [
+        "Ashurnasirpal II and Shalmaneser III are key rulers on the user’s card list.",
+        "Palace reliefs, the banquet stele, and the Black Obelisk display kingship and tribute."
+      ],
+      "significance": "A period of imperial expansion and representation of subject peoples.",
+      "periodId": "neo-assyrian",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "achaemenid",
+      "name": "Achaemenid Period",
+      "date": "530–330 BCE",
+      "startYear": -530,
+      "endYear": -330,
+      "type": "period",
+      "location": "Iran and western Asia",
+      "details": [
+        "Cyrus and Darius I are major rulers in the user’s card list.",
+        "The Cyrus Cylinder and Persepolis reliefs represent royal legitimacy and imperial diversity."
+      ],
+      "significance": "Shows how Achaemenid kings represented political legitimacy and imperial diversity.",
+      "periodId": "achaemenid",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "hellenistic",
+      "name": "Hellenistic Kingdoms (Seleucid)",
+      "date": "330 BCE – 30 BCE",
+      "startYear": -330,
+      "endYear": -30,
+      "type": "period",
+      "location": "Eastern Mediterranean and western Asia",
+      "details": [
+        "These kingdoms followed Alexander’s conquest; the Seleucids were one of them.",
+        "The guide permits “Seleucid” and “Hellenistic Kingdoms” interchangeably on the test."
+      ],
+      "significance": "Helps trace political succession and cultural exchange after Alexander.",
+      "periodId": "hellenistic",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "roman-byzantine",
+      "name": "Roman and Byzantine kingdoms",
+      "date": "30 BCE–1400s CE",
+      "startYear": -30,
+      "endYear": 1450,
+      "type": "period",
+      "location": "Eastern Mediterranean",
+      "details": [
+        "Paul’s Letter to the Galatians addresses an early Christian community.",
+        "Christianity later became a state-backed religious movement under Roman rule."
+      ],
+      "significance": "Provides the political context for Christianity’s growth through Late Antiquity.",
+      "periodId": "roman-byzantine",
+      "source": "User card list; Test 1 Study Guide",
+      "timelineEndYear": 850
+    },
+    {
+      "id": "sasanian",
+      "name": "Sasanian Period",
+      "date": "225 CE–650 CE",
+      "startYear": 225,
+      "endYear": 650,
+      "type": "period",
+      "location": "Iran and Mesopotamia",
+      "details": [
+        "Ardashir established Sasanian rule and appeared in investiture imagery.",
+        "The empire patronized Zoroastrian institutions while Mesopotamian magic bowls reveal mixed everyday practice."
+      ],
+      "significance": "Connects state religious policy to religious diversity on the ground.",
+      "periodId": "sasanian",
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "late-antiquity",
+      "name": "Late Antiquity",
+      "date": "early CE – 850 CE",
+      "startYear": 1,
+      "endYear": 850,
+      "type": "period",
+      "location": "Middle East",
+      "details": [
+        "The guide describes social and political reconfiguration as ancient writing systems fell out of use.",
+        "Christianity, Islam, and Zoroastrianism, and to some degree Judaism, rose as state-backed movements."
+      ],
+      "significance": "Frames the transformation of political and religious life from the early CE centuries to 850 CE.",
+      "periodId": "late-antiquity",
+      "source": "User card list; Test 1 Study Guide"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-24",
+      "name": "Uruk vase",
+      "type": "artifact",
+      "date": "~3200–3000 BCE",
+      "location": "Uruk, southern Iraq",
+      "details": [
+        "Alabaster vessel arranged in stacked registers: water and crops, sheep, then nude men carrying produce.",
+        "The upper register shows offerings to Inanna with a ruler at the front."
+      ],
+      "significance": "Expresses ordered hierarchy and surplus flowing to the temple, an early state institution.",
+      "periodId": "uruk",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-06",
+      "name": "Beveled-rim bowls",
+      "type": "artifact",
+      "date": "~4000–3100 BCE",
+      "location": "Southern Mesopotamia",
+      "details": [
+        "Crude, mass-produced vessels made to a standard size; found by the hundreds of thousands.",
+        "Likely ration bowls used to distribute food to workers."
+      ],
+      "significance": "Evidence for administered labor and bureaucracy during state formation.",
+      "periodId": "uruk",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-07",
+      "name": "Bulla and tokens",
+      "type": "artifact",
+      "date": "Tokens from Neolithic onward; bullae c. 3500–3100 BCE",
+      "location": "Uruk and Susa, Mesopotamia",
+      "details": [
+        "Clay tokens represented goods and were sealed inside clay envelopes (bullae).",
+        "Tokens were pressed onto the outside of envelopes, leaving impressions."
+      ],
+      "significance": "Shows that writing grew from accounting and administration, not literature.",
+      "periodId": "uruk",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-09",
+      "name": "Çatalhöyük",
+      "type": "artifact",
+      "date": "~7100–5950 BCE; Neolithic",
+      "location": "Central Anatolia, Türkiye",
+      "details": [
+        "Dense mudbrick settlement with no streets and access to homes from rooftops.",
+        "Burials under floors, wall paintings, and bull horns are among its notable features."
+      ],
+      "significance": "A large sedentary settlement without clear evidence of a state or elite.",
+      "periodId": "neolithic",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-11",
+      "name": "Hammurabi's stele",
+      "type": "artifact",
+      "date": "~1754 BCE; Old Babylonian period",
+      "location": "Babylonia; found at Susa",
+      "details": [
+        "Basalt monument depicting Hammurabi before Shamash and bearing about 282 laws.",
+        "The laws prescribe different outcomes according to social class."
+      ],
+      "significance": "Not the first law code (Ur-Namma is earlier); it presents royal propaganda of the just king.",
+      "periodId": "old-babylonian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-17",
+      "name": "Khufu's Great Pyramid",
+      "type": "artifact",
+      "date": "~2560 BCE; Old Kingdom",
+      "location": "Giza, Egypt",
+      "details": [
+        "About 146 m high and built from roughly 2.3 million blocks.",
+        "Nearby workers’ villages show organized, fed labor crews."
+      ],
+      "significance": "Shows state power to organize labor; the claim that enslaved people built the pyramid is a myth.",
+      "periodId": "old-kingdom",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-03",
+      "name": "Amarna",
+      "type": "artifact",
+      "date": "~1350–1330 BCE; New Kingdom",
+      "location": "Middle Egypt",
+      "details": [
+        "Akhenaten founded the city as a new capital dedicated to the Aten.",
+        "The city was abandoned after Akhenaten; the Amarna Letters are written in Akkadian cuneiform."
+      ],
+      "significance": "Shows religious upheaval and international diplomacy in the New Kingdom.",
+      "periodId": "new-kingdom",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-21",
+      "name": "Plaque of Akhenaten and Nefertiti under the Aten",
+      "type": "artifact",
+      "date": "~1350 BCE; New Kingdom",
+      "location": "Amarna, Egypt",
+      "details": [
+        "The royal family appears beneath the sun disk, whose rays end in hands holding ankhs.",
+        "The figures use the elongated style associated with Amarna art."
+      ],
+      "significance": "Presents Atenism, with the royal family as the channel to the god, and a break with tradition.",
+      "periodId": "new-kingdom",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-16",
+      "name": "Kush/Nubia",
+      "type": "artifact",
+      "date": "Kerma c. 2500–1500 BCE; Napata c. 1100–650 BCE",
+      "location": "Nile Valley in Sudan and southern Egypt",
+      "details": [
+        "Kush was a rival of Egypt; Kushite kings ruled Egypt as its 25th Dynasty.",
+        "Kushite rulers also fought Assyria; the kingdom’s centers included Kerma and Napata."
+      ],
+      "significance": "Centers African political history as an Egyptian peer and challenges Egypt-centered and racialized narratives.",
+      "periodId": "napatan",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "Kerma through Napatan periods"
+    },
+    {
+      "id": "item-15",
+      "name": "Kerma elite tomb",
+      "type": "artifact",
+      "date": "Classic Kerma, ~1600–1500 BCE",
+      "location": "Kerma, Kush (Sudan)",
+      "details": [
+        "Round graves have a circular stone pile at the entry.",
+        "Cattle skulls and food or drink offerings were placed outside the tombs."
+      ],
+      "significance": "Shows distinct Kerma burial practices during a period of Kushite power.",
+      "periodId": "classic-kerma",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-04",
+      "name": "Ashurnasirpal II's Banquet Stele",
+      "type": "artifact",
+      "date": "~879 BCE; Neo-Assyrian period",
+      "location": "Nimrud, Assyria",
+      "details": [
+        "Celebrates the new capital and a ten-day feast for 69,574 guests.",
+        "The inscription lists food and building works."
+      ],
+      "significance": "Projects royal abundance and empire through a gathering of guests from many communities.",
+      "periodId": "neo-assyrian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-05",
+      "name": "Throneroom and courtyard reliefs of Ashurnasirpal II",
+      "type": "artifact",
+      "date": "~865–860 BCE; Neo-Assyrian period",
+      "location": "Northwest Palace, Nimrud",
+      "details": [
+        "Religious scenes show the king with winged spirits beside a sacred tree.",
+        "Tribute scenes show foreigners bringing goods; lamassu guard palace entrances."
+      ],
+      "significance": "Depicts divinely backed kingship and tribute from conquered peoples.",
+      "periodId": "neo-assyrian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-23",
+      "name": "Shalmaneser III's Black Obelisk",
+      "type": "artifact",
+      "date": "~825 BCE; Neo-Assyrian period",
+      "location": "Nimrud, Assyria",
+      "details": [
+        "Black limestone monument with five registers of tribute.",
+        "One register shows Jehu of Israel bowing before the Assyrian king."
+      ],
+      "significance": "Shows Assyrian domination of the Levant and links to people named in the Hebrew Bible.",
+      "periodId": "neo-assyrian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-10",
+      "name": "Cyrus Cylinder",
+      "type": "artifact",
+      "date": "~539 BCE; Achaemenid period",
+      "location": "Babylon",
+      "details": [
+        "Akkadian cuneiform text says Marduk chose Cyrus over Nabonidus.",
+        "It describes temple restoration and the return of deported peoples."
+      ],
+      "significance": "Not a first human-rights charter: it uses standard Mesopotamian royal propaganda. Pair with Isaiah 44–45.",
+      "periodId": "achaemenid",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-20",
+      "name": "Persepolis Reliefs",
+      "type": "artifact",
+      "date": "Begun ~518 BCE under Darius I; Achaemenid period",
+      "location": "Fars, Iran",
+      "details": [
+        "Apadana stairways show about 23 subject peoples bringing gifts in distinct dress.",
+        "Alexander burned Persepolis in 330 BCE."
+      ],
+      "significance": "Depicts an ideology of harmonious multiethnic empire and how imperial difference was represented.",
+      "periodId": "achaemenid",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-13",
+      "name": "Isaiah 44–45",
+      "type": "artifact",
+      "date": "~540s BCE; end of the Babylonian exile",
+      "location": "Hebrew Bible; Judean/Babylonian context",
+      "details": [
+        "Second Isaiah calls Cyrus God’s “anointed” and “shepherd,” who will rebuild Jerusalem.",
+        "The passage mocks idols and asserts one god."
+      ],
+      "significance": "Expresses a Judean perspective welcoming Persian rule; compare the Cyrus Cylinder.",
+      "periodId": "achaemenid",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-14",
+      "name": "Jewish/Hebrew Bible",
+      "type": "artifact",
+      "date": "Texts composed c. 8th–2nd centuries BCE; surviving witnesses range from c. 600 BCE onward",
+      "location": "Ancient Israel/Judah and diaspora communities",
+      "details": [
+        "Much composition took place during or after the exile; Ketef Hinnom amulets (~600 BCE) and Dead Sea Scrolls are early partial witnesses.",
+        "Complete Hebrew manuscripts are medieval; distinguish composition dates from surviving copies."
+      ],
+      "significance": "The text is later and more layered than many events it describes. Check the “Price is Right” slides.",
+      "periodId": "hellenistic",
+      "verifyWithSlides": true,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "composition and manuscript history spans periods"
+    },
+    {
+      "id": "item-08",
+      "name": "Dead Sea Scrolls",
+      "type": "artifact",
+      "date": "~3rd century BCE–1st century CE; found 1947–56",
+      "location": "Caves near Qumran, Judean Desert",
+      "details": [
+        "About 900 manuscripts in Hebrew, Aramaic, and Greek; include biblical and sectarian texts.",
+        "They preserve the oldest copies of almost every biblical book."
+      ],
+      "significance": "Show the diversity of Second Temple Judaism and provide the earliest biblical manuscript copies.",
+      "periodId": "hellenistic",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "Second Temple period"
+    },
+    {
+      "id": "item-02",
+      "name": "Alexander the Great",
+      "type": "artifact",
+      "date": "356–323 BCE; campaigns 334–330 BCE",
+      "location": "Macedonia; Achaemenid Empire and successor territories",
+      "details": [
+        "Conquered the Achaemenid Empire, burned Persepolis, and died in Babylon.",
+        "His generals divided the empire, including Seleucus and the Seleucid dynasty."
+      ],
+      "significance": "Marks the start of the Hellenistic period and the spread of Hellenism.",
+      "periodId": "hellenistic",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-22",
+      "name": "Seleucid statue of Herakles-Bahram",
+      "type": "artifact",
+      "date": "Hellenistic period; exact date/place to check with slides",
+      "location": "Seleucid Mesopotamia/Iran",
+      "details": [
+        "Greek hero Herakles is identified with the Iranian victory god Verethragna (Bahram).",
+        "The statue bears a Greek inscription."
+      ],
+      "significance": "Shows Hellenism as cultural blending rather than replacement. Check the slide for date and place.",
+      "periodId": "hellenistic",
+      "verifyWithSlides": true,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-19",
+      "name": "Paul's Letter to the Galatians",
+      "type": "artifact",
+      "date": "~50s CE",
+      "location": "Greek letter to churches in Galatia, central Anatolia (Roman Empire)",
+      "details": [
+        "Paul argues that gentile converts do not need circumcision or Torah observance.",
+        "Galatians 3:28 states “neither Jew nor Greek.”"
+      ],
+      "significance": "Shows early Christianity defining its relationship with Judaism and addressing ethnic identity.",
+      "periodId": "roman-byzantine",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-01",
+      "name": "Account of the Deeds of Ardashir",
+      "type": "artifact",
+      "date": "Ardashir I’s reign, 224–242 CE; text in Middle Persian",
+      "location": "Sasanian Iran",
+      "details": [
+        "Legend recounts Ardashir’s rise and overthrow of the Parthian king Artabanus.",
+        "Divine royal glory guides Ardashir."
+      ],
+      "significance": "Legitimizes the new dynasty by joining kingship with Zoroastrian favor.",
+      "periodId": "sasanian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-12",
+      "name": "Investiture of Ardashir I at Naqsh-e Rostam",
+      "type": "artifact",
+      "date": "~230s CE; Sasanian period",
+      "location": "Naqsh-e Rostam, near Persepolis, Iran",
+      "details": [
+        "Ahura Mazda on horseback hands Ardashir the ring of kingship; horses trample Artabanus and Ahriman.",
+        "A trilingual inscription accompanies the relief, placed near Achaemenid royal tombs."
+      ],
+      "significance": "Claims divine legitimacy and Persian heritage for Sasanian kingship.",
+      "periodId": "sasanian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-18",
+      "name": "Magic Bowls",
+      "type": "artifact",
+      "date": "~5th–7th centuries CE; Sasanian period",
+      "location": "Sasanian Mesopotamia",
+      "details": [
+        "Clay bowls carry spiral incantations in Jewish Aramaic, Syriac, or Mandaic.",
+        "They were buried upside down to trap demons; the practice crossed religious communities."
+      ],
+      "significance": "Shows everyday religious diversity in the Sasanian Empire.",
+      "periodId": "sasanian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-28",
+      "name": "Orientalism",
+      "type": "theme",
+      "date": "Modern concept; Edward Said, 1978",
+      "location": "Western representations of the Middle East",
+      "details": [
+        "Western discourse pictures “the East” as exotic, backward, and unchanging.",
+        "Such representations can justify domination and shape accounts of the ancient Middle East, such as despotic eastern kings versus free Greeks."
+      ],
+      "significance": "Names a lens the course questions when studying the ancient Middle East.",
+      "periodId": null,
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "modern concept applied across periods"
+    },
+    {
+      "id": "item-29",
+      "name": "Sedentary vs Mobile Populations",
+      "type": "theme",
+      "date": "Across prehistory and antiquity",
+      "location": "Mesopotamia and the wider Middle East",
+      "details": [
+        "Settled farmers contrast with pastoralists and foragers; Scott discusses this in Against the Grain.",
+        "States relied on taxable grain farmers, while Mesopotamian texts stereotyped mobile peoples such as the Amorites."
+      ],
+      "significance": "Ancient difference could be based on lifestyle rather than physical traits.",
+      "periodId": null,
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "cross-period"
+    },
+    {
+      "id": "item-30",
+      "name": "Race and Ethnicity",
+      "type": "theme",
+      "date": "Course concepts applied across periods",
+      "location": "Ancient Mesopotamia and modern comparisons",
+      "details": [
+        "Ethnicity is a social grouping, internally or externally defined, often through cultural features such as food or language.",
+        "Race is also social and rests on essentialized difference that creates hierarchy; Mesopotamian distinctions emphasized lifestyle rather than physical or linguistic traits."
+      ],
+      "significance": "Distinguishes ethnicity from race and cautions against projecting modern US racial categories unchanged onto antiquity.",
+      "periodId": null,
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "cross-period"
+    },
+    {
+      "id": "item-31",
+      "name": "Racial hinge/loophole",
+      "type": "theme",
+      "date": "Early 20th-century naturalization cases to the present",
+      "location": "United States; Middle Eastern and Iranian American experience",
+      "details": [
+        "Racial loophole: Middle Eastern (especially Iranian) Americans can be legally classified as white while facing social discrimination.",
+        "Racial hinge: a court ruling about the whiteness of one group can shift how adjacent groups are classified; the lecture contrasts Armenian Christian and Persian Zoroastrian cases."
+      ],
+      "significance": "Shows race as a social and legal construction. Check the author in notes.",
+      "periodId": null,
+      "verifyWithSlides": true,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "modern concept applied across periods"
+    },
+    {
+      "id": "item-26",
+      "name": "Hellenism",
+      "type": "theme",
+      "date": "From 330 BCE onward",
+      "location": "Seleucid realms and wider eastern Mediterranean/western Asia",
+      "details": [
+        "Greek language and culture spread and were adopted locally after Alexander.",
+        "Local traditions blended with Greek forms, as in Herakles-Bahram; “Greek” also became an identity label."
+      ],
+      "significance": "Describes cultural mixing rather than replacement.",
+      "periodId": "hellenistic",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-27",
+      "name": "Judaism (ancient)",
+      "type": "theme",
+      "date": "Exile and Persian period through Late Antiquity",
+      "location": "Judea and Jewish communities across the diaspora",
+      "details": [
+        "Religion of Judeans centered on YHWH, Torah, and the Jerusalem Temple.",
+        "Diverse Second Temple practices are evidenced by the Dead Sea Scrolls; after the Temple’s destruction in 70 CE, rabbinic Judaism and Babylonian Jewish communities developed."
+      ],
+      "significance": "Shows a changing and diverse tradition across imperial settings.",
+      "periodId": null,
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "cross-period"
+    },
+    {
+      "id": "item-25",
+      "name": "Christianity (ancient)",
+      "type": "theme",
+      "date": "1st century CE onward; state-backed in Roman Empire from 4th century CE",
+      "location": "Roman Judea, Roman/Byzantine Empire, and Sasanian Empire",
+      "details": [
+        "Grew from the Jewish Jesus movement; Paul spread it to gentiles, as seen in Galatians.",
+        "Became state-backed in the Roman/Byzantine Empire from the 4th century CE and was also present in the Sasanian Empire."
+      ],
+      "significance": "An example of a Late Antique state religion and a movement with Jewish origins.",
+      "periodId": "late-antiquity",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-32",
+      "name": "Zoroastrianism (ancient)",
+      "type": "theme",
+      "date": "Achaemenid and Sasanian periods",
+      "location": "Iran and the Sasanian Empire",
+      "details": [
+        "Iranian religion centered on Ahura Mazda and the opposition of the evil spirit Ahriman; traditions include fire temples and the Avesta.",
+        "Achaemenid kings invoked Ahuramazda; Sasanians made Zoroastrianism a state religion, as represented at Naqsh-e Rostam."
+      ],
+      "significance": "Shows the relationship between kingship and religion in a diverse empire.",
+      "periodId": "sasanian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    },
+    {
+      "id": "item-34",
+      "name": "T/F: Race is a biological category while ethnicity is cultural",
+      "type": "myth",
+      "date": "Modern racial discourse; course concept",
+      "location": "Course concept",
+      "details": [
+        "False: race and ethnicity are both social categories.",
+        "Race rests on essentialized difference that establishes hierarchy."
+      ],
+      "significance": "Corrects the myth of race as biological fact and supports careful analysis of group identity.",
+      "periodId": "late-antiquity",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide",
+      "periodLabel": "course concept"
+    },
+    {
+      "id": "item-33",
+      "name": "T/F: Hammurabi wrote the first law code ever",
+      "type": "myth",
+      "date": "18th century BCE; Old Babylonian period",
+      "location": "Babylonia",
+      "details": [
+        "False: earlier law collections existed, including the laws of Ur-Namma.",
+        "Hammurabi’s stele is a royal monument and a class example of royal propaganda."
+      ],
+      "significance": "Corrects the course myth that Hammurabi produced the earliest law code.",
+      "periodId": "old-babylonian",
+      "verifyWithSlides": false,
+      "source": "User card list; Test 1 Study Guide"
+    }
+  ],
+  "shortIdIds": [
+    "item-24",
+    "item-06",
+    "item-07",
+    "item-09",
+    "item-11",
+    "item-17",
+    "item-03",
+    "item-21",
+    "item-16",
+    "item-15",
+    "item-04",
+    "item-05",
+    "item-23",
+    "item-10",
+    "item-20",
+    "item-13",
+    "item-14",
+    "item-08",
+    "item-02",
+    "item-22",
+    "item-19",
+    "item-01",
+    "item-12",
+    "item-18",
+    "item-28",
+    "item-29",
+    "item-30",
+    "item-31",
+    "item-26",
+    "item-27",
+    "item-25",
+    "item-32"
+  ]
+}

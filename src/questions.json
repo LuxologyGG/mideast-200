@@ -1,0 +1,1050 @@
+{
+  "tf": [
+    {
+      "id": "tf-01",
+      "prompt": "The Neolithic spans roughly 10,000–3,000 BCE, the longest period listed.",
+      "answer": true,
+      "explanation": "The guide gives this approximate range.",
+      "itemIds": [
+        "neolithic"
+      ]
+    },
+    {
+      "id": "tf-02",
+      "prompt": "Uruk is associated with early cities, state formation, and proto-writing.",
+      "answer": true,
+      "explanation": "The card gives these as Uruk features.",
+      "itemIds": [
+        "uruk"
+      ]
+    },
+    {
+      "id": "tf-03",
+      "prompt": "The Uruk vase is an alabaster vessel with stacked registers of crops, sheep, produce bearers, and offerings to Inanna.",
+      "answer": true,
+      "explanation": "Those materials and scenes are listed on the card.",
+      "itemIds": [
+        "item-24"
+      ]
+    },
+    {
+      "id": "tf-04",
+      "prompt": "Beveled-rim bowls were crude, standardized, mass-produced, likely ration bowls for workers.",
+      "answer": true,
+      "explanation": "The card gives that description and likely function.",
+      "itemIds": [
+        "item-06"
+      ]
+    },
+    {
+      "id": "tf-05",
+      "prompt": "Tokens sealed in bullae illustrate the accounting practices from which writing developed.",
+      "answer": true,
+      "explanation": "The card connects accounting to the origin of writing.",
+      "itemIds": [
+        "item-07"
+      ]
+    },
+    {
+      "id": "tf-06",
+      "prompt": "Çatalhöyük was a dense Neolithic mudbrick town with no streets and roof entry.",
+      "answer": true,
+      "explanation": "Those features are listed on the card.",
+      "itemIds": [
+        "item-09"
+      ]
+    },
+    {
+      "id": "tf-07",
+      "prompt": "Hammurabi’s stele shows him before Shamash and laws that differ by social class.",
+      "answer": true,
+      "explanation": "The card identifies both the image and class differences in the laws.",
+      "itemIds": [
+        "item-11"
+      ]
+    },
+    {
+      "id": "tf-08",
+      "prompt": "Workers’ villages at Giza support the account of organized, fed labor crews building Khufu’s pyramid.",
+      "answer": true,
+      "explanation": "The card says the villages show organized, fed crews; the slave labor claim is a myth.",
+      "itemIds": [
+        "item-17"
+      ]
+    },
+    {
+      "id": "tf-09",
+      "prompt": "Amarna was Akhenaten’s new capital for the Aten and was abandoned after him.",
+      "answer": true,
+      "explanation": "The card gives both details.",
+      "itemIds": [
+        "item-03"
+      ]
+    },
+    {
+      "id": "tf-10",
+      "prompt": "Kushite kings ruled Egypt as the 25th Dynasty.",
+      "answer": true,
+      "explanation": "The Kush/Nubia card states this.",
+      "itemIds": [
+        "item-16"
+      ]
+    },
+    {
+      "id": "tf-11",
+      "prompt": "Kerma elite tombs had round graves with cattle skulls and food or drink offerings outside.",
+      "answer": true,
+      "explanation": "Those burial features are listed on the card.",
+      "itemIds": [
+        "item-15"
+      ]
+    },
+    {
+      "id": "tf-12",
+      "prompt": "Ashurnasirpal II’s Banquet Stele records a 10-day feast for 69,574 guests.",
+      "answer": true,
+      "explanation": "The card gives the feast duration and guest count.",
+      "itemIds": [
+        "item-04"
+      ]
+    },
+    {
+      "id": "tf-13",
+      "prompt": "The Black Obelisk shows Jehu of Israel bowing among five tribute registers.",
+      "answer": true,
+      "explanation": "The card describes the registers and Jehu scene.",
+      "itemIds": [
+        "item-23"
+      ]
+    },
+    {
+      "id": "tf-14",
+      "prompt": "The Cyrus Cylinder presents Marduk choosing Cyrus over Nabonidus and describes restored temples and returned deportees.",
+      "answer": true,
+      "explanation": "These are details listed on the card.",
+      "itemIds": [
+        "item-10"
+      ]
+    },
+    {
+      "id": "tf-15",
+      "prompt": "Persepolis reliefs show about 23 subject peoples bringing gifts in distinct dress.",
+      "answer": true,
+      "explanation": "The card describes the Apadana procession.",
+      "itemIds": [
+        "item-20"
+      ]
+    },
+    {
+      "id": "tf-16",
+      "prompt": "Isaiah 44–45 calls Cyrus God’s “anointed” and “shepherd” and welcomes Persian rule from a Judean perspective.",
+      "answer": true,
+      "explanation": "These phrases and interpretation are in the card.",
+      "itemIds": [
+        "item-13"
+      ]
+    },
+    {
+      "id": "tf-17",
+      "prompt": "The Dead Sea Scrolls include biblical books and sectarian texts, reflecting Second Temple Jewish diversity.",
+      "answer": true,
+      "explanation": "The card lists both textual types and this significance.",
+      "itemIds": [
+        "item-08"
+      ]
+    },
+    {
+      "id": "tf-18",
+      "prompt": "Alexander’s conquest of the Achaemenid Empire began the Hellenistic period and spread Hellenism.",
+      "answer": true,
+      "explanation": "The card identifies this as his significance.",
+      "itemIds": [
+        "item-02"
+      ]
+    },
+    {
+      "id": "tf-19",
+      "prompt": "Sasanian Magic Bowls were inscribed across religious lines and used to trap demons.",
+      "answer": true,
+      "explanation": "The card describes their spells, use, and religious diversity.",
+      "itemIds": [
+        "item-18"
+      ]
+    },
+    {
+      "id": "tf-20",
+      "prompt": "A racial hinge occurs when a court ruling about one group shifts how adjacent groups are classified; the lecture contrasts Armenian Christian and Persian Zoroastrian cases.",
+      "answer": true,
+      "explanation": "That is the updated card definition of racial hinge.",
+      "itemIds": [
+        "item-31"
+      ]
+    },
+    {
+      "id": "tf-21",
+      "prompt": "Hammurabi wrote the first law code ever.",
+      "answer": false,
+      "explanation": "Ur-Namma’s earlier law collection disproves this class myth.",
+      "itemIds": [
+        "item-11",
+        "item-33"
+      ]
+    },
+    {
+      "id": "tf-22",
+      "prompt": "Enslaved people built Khufu’s Great Pyramid, according to the workers’ villages.",
+      "answer": false,
+      "explanation": "The card says the villages show organized fed crews; the slave claim is false.",
+      "itemIds": [
+        "item-17"
+      ]
+    },
+    {
+      "id": "tf-23",
+      "prompt": "The Uruk vase is a clay accounting tablet without imagery.",
+      "answer": false,
+      "explanation": "It is an alabaster vessel with carved stacked registers and a procession.",
+      "itemIds": [
+        "item-24"
+      ]
+    },
+    {
+      "id": "tf-24",
+      "prompt": "The Cyrus Cylinder was the first human-rights charter.",
+      "answer": false,
+      "explanation": "The card calls this a myth; it is standard Mesopotamian royal propaganda.",
+      "itemIds": [
+        "item-10"
+      ]
+    },
+    {
+      "id": "tf-25",
+      "prompt": "Beveled-rim bowls were rare luxury vessels found only in royal tombs.",
+      "answer": false,
+      "explanation": "They were mass-produced and found by the hundreds of thousands.",
+      "itemIds": [
+        "item-06"
+      ]
+    },
+    {
+      "id": "tf-26",
+      "prompt": "Çatalhöyük had streets and a clear state elite.",
+      "answer": false,
+      "explanation": "The card describes no streets and no state or clear elite.",
+      "itemIds": [
+        "item-09"
+      ]
+    },
+    {
+      "id": "tf-27",
+      "prompt": "Amarna was founded for Amun and remained occupied after Akhenaten.",
+      "answer": false,
+      "explanation": "It was a capital for the Aten and was abandoned after Akhenaten.",
+      "itemIds": [
+        "item-03"
+      ]
+    },
+    {
+      "id": "tf-28",
+      "prompt": "Napatan rulers never challenged Assyrian control of the southern Levant.",
+      "answer": false,
+      "explanation": "The guide says Kush eventually challenged Assyria for control of the southern Levant.",
+      "itemIds": [
+        "item-16"
+      ]
+    },
+    {
+      "id": "tf-29",
+      "prompt": "The Black Obelisk depicts Alexander bringing tribute to Shalmaneser III.",
+      "answer": false,
+      "explanation": "It shows Jehu of Israel bowing in a tribute register.",
+      "itemIds": [
+        "item-23"
+      ]
+    },
+    {
+      "id": "tf-30",
+      "prompt": "Persepolis reliefs show only Persians and no subject peoples.",
+      "answer": false,
+      "explanation": "They depict about 23 subject peoples bringing gifts.",
+      "itemIds": [
+        "item-20"
+      ]
+    },
+    {
+      "id": "tf-31",
+      "prompt": "The Dead Sea Scrolls contain only biblical books and no sectarian texts.",
+      "answer": false,
+      "explanation": "The card lists sectarian texts as well as biblical material.",
+      "itemIds": [
+        "item-08"
+      ]
+    },
+    {
+      "id": "tf-32",
+      "prompt": "Alexander founded the Achaemenid Empire.",
+      "answer": false,
+      "explanation": "He conquered it; successor Hellenistic kingdoms followed.",
+      "itemIds": [
+        "item-02"
+      ]
+    },
+    {
+      "id": "tf-33",
+      "prompt": "Hellenism means Greek culture replaced every local tradition without blending.",
+      "answer": false,
+      "explanation": "Herakles-Bahram illustrates blending, not replacement.",
+      "itemIds": [
+        "item-22",
+        "item-26"
+      ]
+    },
+    {
+      "id": "tf-34",
+      "prompt": "Paul’s Letter to the Galatians says gentile converts must accept circumcision and Torah.",
+      "answer": false,
+      "explanation": "The card says they did not need circumcision or Torah.",
+      "itemIds": [
+        "item-19"
+      ]
+    },
+    {
+      "id": "tf-35",
+      "prompt": "The Account of the Deeds of Ardashir is a Roman Latin account of Alexander.",
+      "answer": false,
+      "explanation": "It is a Middle Persian Sasanian text about Ardashir and dynastic legitimacy.",
+      "itemIds": [
+        "item-01"
+      ]
+    },
+    {
+      "id": "tf-36",
+      "prompt": "Magic Bowls were exclusively Zoroastrian and written in only one language.",
+      "answer": false,
+      "explanation": "They were used across religious lines and include Jewish Aramaic, Syriac, or Mandaic.",
+      "itemIds": [
+        "item-18"
+      ]
+    },
+    {
+      "id": "tf-37",
+      "prompt": "Orientalism portrays the East as progressive and unchangingly superior to the West.",
+      "answer": false,
+      "explanation": "The card describes discourse depicting the East as exotic, backward, and unchanging to justify domination.",
+      "itemIds": [
+        "item-28"
+      ]
+    },
+    {
+      "id": "tf-38",
+      "prompt": "Mesopotamian essentialized difference was based on physical or linguistic traits just as in modern US court cases.",
+      "answer": false,
+      "explanation": "The card says ancient differences centered on lifestyle, not physical or linguistic traits.",
+      "itemIds": [
+        "item-30"
+      ]
+    },
+    {
+      "id": "tf-39",
+      "prompt": "Race is a biological category while ethnicity is cultural.",
+      "answer": false,
+      "explanation": "Both are social; race organizes essentialized difference into hierarchy.",
+      "itemIds": [
+        "item-30",
+        "item-34"
+      ]
+    },
+    {
+      "id": "tf-40",
+      "prompt": "Zoroastrianism was unrelated to kingship in the Sasanian period.",
+      "answer": false,
+      "explanation": "The card says Sasanians made it the state religion and ties kingship to religion.",
+      "itemIds": [
+        "item-32"
+      ]
+    }
+  ],
+  "mc": [
+    {
+      "id": "mc-01",
+      "prompt": "Which period contains the Uruk vase, dated about 3200–3000 BCE?",
+      "options": [
+        "Neo-Assyrian Period",
+        "Uruk Period (Mesopotamia)",
+        "Old Babylonian Period",
+        "Sasanian Period"
+      ],
+      "answerIndex": 1,
+      "explanation": "The vase dates to Uruk, about 3200–3000 BCE.",
+      "itemIds": [
+        "item-24"
+      ]
+    },
+    {
+      "id": "mc-02",
+      "prompt": "What does the Uruk vase’s register composition express?",
+      "options": [
+        "Ordered hierarchy and surplus flowing up to the temple",
+        "Abolition of kingship",
+        "Pyramid construction techniques",
+        "Roman military campaigns"
+      ],
+      "answerIndex": 0,
+      "explanation": "The card interprets it as ordered hierarchy and surplus flowing toward the temple.",
+      "itemIds": [
+        "item-24"
+      ]
+    },
+    {
+      "id": "mc-03",
+      "prompt": "What was the likely use of mass-produced beveled-rim bowls?",
+      "options": [
+        "Demon traps",
+        "Ration bowls for workers",
+        "Royal burial urns",
+        "Diplomatic letters"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card identifies them as likely ration bowls for workers.",
+      "itemIds": [
+        "item-06"
+      ]
+    },
+    {
+      "id": "mc-04",
+      "prompt": "What do tokens sealed in bullae illustrate?",
+      "options": [
+        "Roman law in Galatia",
+        "Writing’s roots in accounting",
+        "Stone architecture",
+        "Alphabetic literature"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card connects tokens and bullae with accounting, from which writing developed.",
+      "itemIds": [
+        "item-07"
+      ]
+    },
+    {
+      "id": "mc-05",
+      "prompt": "Which feature is associated with Çatalhöyük?",
+      "options": [
+        "Street grid and palace elite",
+        "Apadana gift procession",
+        "Roof entry and burials under floors",
+        "Pyramid complex"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card lists roof entry and burials under floors.",
+      "itemIds": [
+        "item-09"
+      ]
+    },
+    {
+      "id": "mc-06",
+      "prompt": "Which earlier law collection disproves the claim that Hammurabi’s was first?",
+      "options": [
+        "Dead Sea Scrolls",
+        "Cyrus Cylinder",
+        "Ur-Namma",
+        "Avesta"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card names Ur-Namma as an earlier law collection.",
+      "itemIds": [
+        "item-11"
+      ]
+    },
+    {
+      "id": "mc-07",
+      "prompt": "What is a key significance of Hammurabi’s stele?",
+      "options": [
+        "Proven manual for every court",
+        "Human-rights charter",
+        "Hellenistic biography",
+        "Royal propaganda of the just king"
+      ],
+      "answerIndex": 3,
+      "explanation": "The card calls it royal propaganda and says it was not the first law code.",
+      "itemIds": [
+        "item-11"
+      ]
+    },
+    {
+      "id": "mc-08",
+      "prompt": "What evidence counters the myth that slaves built Khufu’s pyramid?",
+      "options": [
+        "Roman letter from Galatia",
+        "Workers’ villages showing organized fed crews",
+        "Cuneiform tablet from Persepolis",
+        "List on the Cyrus Cylinder"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card cites workers’ villages and organized, fed crews.",
+      "itemIds": [
+        "item-17"
+      ]
+    },
+    {
+      "id": "mc-09",
+      "prompt": "Khufu’s Great Pyramid belongs to which period?",
+      "options": [
+        "Hellenistic Kingdoms",
+        "New Kingdom, Egypt",
+        "Achaemenid Period",
+        "Old Kingdom, Egypt"
+      ],
+      "answerIndex": 3,
+      "explanation": "It dates to about 2560 BCE in the Old Kingdom.",
+      "itemIds": [
+        "item-17"
+      ]
+    },
+    {
+      "id": "mc-10",
+      "prompt": "What was Amarna?",
+      "options": [
+        "Seleucid city founded by Alexander",
+        "Kush’s capital at Napata",
+        "Akhenaten’s new capital for the Aten",
+        "Roman province"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card identifies it as Akhenaten’s Aten-focused capital.",
+      "itemIds": [
+        "item-03"
+      ]
+    },
+    {
+      "id": "mc-11",
+      "prompt": "What language was used for the Amarna Letters?",
+      "options": [
+        "Latin",
+        "Mandaic",
+        "Middle Persian",
+        "Akkadian cuneiform"
+      ],
+      "answerIndex": 3,
+      "explanation": "The card says the letters were in Akkadian cuneiform.",
+      "itemIds": [
+        "item-03"
+      ]
+    },
+    {
+      "id": "mc-12",
+      "prompt": "Which interpretation fits the Akhenaten and Nefertiti plaque?",
+      "options": [
+        "Cyrus returns deportees",
+        "Ardashir receives kingship",
+        "Royals appear as a channel to the Aten",
+        "Jehu brings tribute"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card says rays end in hands holding ankhs and royals act as a channel to the god.",
+      "itemIds": [
+        "item-21"
+      ]
+    },
+    {
+      "id": "mc-13",
+      "prompt": "Which statement about Kush is supported?",
+      "options": [
+        "Kush was a Greek colony",
+        "Kush began under Sasanians",
+        "Kushite kings ruled Egypt as the 25th Dynasty",
+        "Kush lay north of Assyria"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card says Kushite kings ruled Egypt as the 25th Dynasty.",
+      "itemIds": [
+        "item-16"
+      ]
+    },
+    {
+      "id": "mc-14",
+      "prompt": "Which detail is associated with Kerma elite tombs?",
+      "options": [
+        "Procession of 23 peoples",
+        "Cattle skulls and food or drink offerings outside round graves",
+        "Roman law tablets",
+        "Demon bowls buried upside down"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card describes round graves and offerings outside.",
+      "itemIds": [
+        "item-15"
+      ]
+    },
+    {
+      "id": "mc-15",
+      "prompt": "What does Ashurnasirpal II’s Banquet Stele record?",
+      "options": [
+        "Building Khufu’s pyramid",
+        "A 10-day feast for 69,574 guests",
+        "Founding of Amarna",
+        "Alexander burning Persepolis"
+      ],
+      "answerIndex": 1,
+      "explanation": "It celebrates the new capital with a 10-day feast and gives the guest count.",
+      "itemIds": [
+        "item-04"
+      ]
+    },
+    {
+      "id": "mc-16",
+      "prompt": "What does the banquet and guest list signify?",
+      "options": [
+        "Rejection of kingship",
+        "End of writing",
+        "First law code",
+        "Royal abundance and empire, including multiethnic guests"
+      ],
+      "answerIndex": 3,
+      "explanation": "The card interprets the feast as royal abundance and empire.",
+      "itemIds": [
+        "item-04"
+      ]
+    },
+    {
+      "id": "mc-17",
+      "prompt": "What do religious scenes on Ashurnasirpal II’s palace reliefs show?",
+      "options": [
+        "Marduk choosing Cyrus",
+        "Aten’s rays over Akhenaten",
+        "King with winged spirits at a sacred tree",
+        "Paul addressing Galatians"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card describes the king with winged spirits at a sacred tree.",
+      "itemIds": [
+        "item-05"
+      ]
+    },
+    {
+      "id": "mc-18",
+      "prompt": "Which ruler is shown bowing on the Black Obelisk?",
+      "options": [
+        "Alexander",
+        "Cyrus",
+        "Jehu of Israel",
+        "Ardashir I"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card identifies Jehu of Israel bowing in a tribute scene.",
+      "itemIds": [
+        "item-23"
+      ]
+    },
+    {
+      "id": "mc-19",
+      "prompt": "How does the card characterize the Cyrus Cylinder?",
+      "options": [
+        "First human-rights charter",
+        "Greek account of Persian Wars",
+        "Sectarian manuscript",
+        "Standard Mesopotamian royal propaganda"
+      ],
+      "answerIndex": 3,
+      "explanation": "It explicitly rejects the human-rights-charter interpretation.",
+      "itemIds": [
+        "item-10"
+      ]
+    },
+    {
+      "id": "mc-20",
+      "prompt": "What does the Cyrus Cylinder say about Marduk?",
+      "options": [
+        "Marduk chose Cyrus over Nabonidus",
+        "Marduk chose Nabonidus",
+        "Marduk is absent",
+        "Marduk crowned Alexander"
+      ],
+      "answerIndex": 0,
+      "explanation": "The card says Marduk chose Cyrus over Nabonidus.",
+      "itemIds": [
+        "item-10"
+      ]
+    },
+    {
+      "id": "mc-21",
+      "prompt": "Persepolis Reliefs belong to which period?",
+      "options": [
+        "Achaemenid Period",
+        "Neo-Assyrian Period",
+        "Sasanian Period",
+        "Roman and Byzantine kingdoms"
+      ],
+      "answerIndex": 0,
+      "explanation": "They began under Darius around 518 BCE in the Achaemenid period.",
+      "itemIds": [
+        "item-20"
+      ]
+    },
+    {
+      "id": "mc-22",
+      "prompt": "What do the Apadana stairs depict?",
+      "options": [
+        "Pyramid workers",
+        "Jehu bowing to Shalmaneser",
+        "Ardashir receiving the ring",
+        "About 23 subject peoples bringing gifts in distinct dress"
+      ],
+      "answerIndex": 3,
+      "explanation": "The card describes about 23 delegations bringing gifts.",
+      "itemIds": [
+        "item-20"
+      ]
+    },
+    {
+      "id": "mc-23",
+      "prompt": "Which text calls Cyrus God’s “anointed” and “shepherd”?",
+      "options": [
+        "Account of the Deeds of Ardashir",
+        "Dead Sea Scrolls",
+        "Isaiah 44–45",
+        "Galatians"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card identifies those titles in Isaiah 44–45.",
+      "itemIds": [
+        "item-13"
+      ]
+    },
+    {
+      "id": "mc-24",
+      "prompt": "What dating distinction matters for the Jewish/Hebrew Bible?",
+      "options": [
+        "All texts and copies date to Rome",
+        "Alexander composed it",
+        "Complete Bible survives from Neolithic",
+        "Texts were written over centuries; surviving copies are later"
+      ],
+      "answerIndex": 3,
+      "explanation": "The card distinguishes composition from surviving partial and complete manuscripts.",
+      "itemIds": [
+        "item-14"
+      ]
+    },
+    {
+      "id": "mc-25",
+      "prompt": "What do the Dead Sea Scrolls include?",
+      "options": [
+        "Only royal law codes",
+        "Only demon spells",
+        "Only Greek plays",
+        "Biblical books and sectarian texts"
+      ],
+      "answerIndex": 3,
+      "explanation": "The card describes biblical books and sectarian texts in several languages.",
+      "itemIds": [
+        "item-08"
+      ]
+    },
+    {
+      "id": "mc-26",
+      "prompt": "What did Alexander’s generals do after his death?",
+      "options": [
+        "Restore Achaemenids as one kingdom",
+        "Split his empire, including Seleucus",
+        "Found Sasanian Empire",
+        "Move capital to Amarna"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card says his generals split the empire, including Seleucus.",
+      "itemIds": [
+        "item-02"
+      ]
+    },
+    {
+      "id": "mc-27",
+      "prompt": "Herakles-Bahram illustrates Hellenism as what?",
+      "options": [
+        "Replacement of local traditions",
+        "Blending of Greek and Iranian traditions",
+        "Egyptian pyramid cult",
+        "Roman legal category"
+      ],
+      "answerIndex": 1,
+      "explanation": "Herakles was identified with Iranian victory god Verethragna/Bahram.",
+      "itemIds": [
+        "item-22",
+        "item-26"
+      ]
+    },
+    {
+      "id": "mc-28",
+      "prompt": "According to Galatians, what did gentile converts not need?",
+      "options": [
+        "Roman citizenship",
+        "Worship at Persepolis",
+        "Circumcision or Torah",
+        "Greek language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The card says gentile converts did not need circumcision or Torah.",
+      "itemIds": [
+        "item-19"
+      ]
+    },
+    {
+      "id": "mc-29",
+      "prompt": "What legitimizes Ardashir in the Account of the Deeds of Ardashir?",
+      "options": [
+        "Divine royal glory and Zoroastrian favor",
+        "Roman senatorial election",
+        "Aten’s rays",
+        "Hebrew Bible"
+      ],
+      "answerIndex": 0,
+      "explanation": "The card joins dynastic legitimacy to Zoroastrian favor.",
+      "itemIds": [
+        "item-01"
+      ]
+    },
+    {
+      "id": "mc-30",
+      "prompt": "What happens in the Investiture of Ardashir at Naqsh-e Rostam?",
+      "options": [
+        "Alexander receives gifts",
+        "Ahura Mazda gives Ardashir the ring of kingship",
+        "Marduk crowns Cyrus",
+        "Jehu bows"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card says Ahura Mazda hands Ardashir the ring of kingship.",
+      "itemIds": [
+        "item-12"
+      ]
+    },
+    {
+      "id": "mc-31",
+      "prompt": "What were Magic Bowls used to do?",
+      "options": [
+        "Record tribute",
+        "Trap demons with spiral spells",
+        "Hold offerings to Inanna",
+        "Store tokens"
+      ],
+      "answerIndex": 1,
+      "explanation": "The card says they were buried upside down to trap demons.",
+      "itemIds": [
+        "item-18"
+      ]
+    },
+    {
+      "id": "mc-32",
+      "prompt": "What does Orientalism do, according to the card?",
+      "options": [
+        "Depicts the East as exotic, backward, and unchanging to justify domination",
+        "Defines groups by food",
+        "Records tribute",
+        "Describes cultures as interchangeable"
+      ],
+      "answerIndex": 0,
+      "explanation": "That is the card’s summary of Orientalist discourse.",
+      "itemIds": [
+        "item-28"
+      ]
+    },
+    {
+      "id": "mc-33",
+      "prompt": "What difference between sedentary and mobile groups does the card emphasize?",
+      "options": [
+        "Lifestyle, not physical traits",
+        "Fixed biological division",
+        "Roman legal distinction",
+        "Greek vs Persian language only"
+      ],
+      "answerIndex": 0,
+      "explanation": "The card says this ancient difference centered on lifestyle.",
+      "itemIds": [
+        "item-29"
+      ]
+    },
+    {
+      "id": "mc-34",
+      "prompt": "What does the racial hinge/loophole illustrate?",
+      "options": [
+        "Ethnicity is always hierarchical",
+        "Legal whiteness can coexist with social discrimination",
+        "Race is biological",
+        "Legal categories never shift"
+      ],
+      "answerIndex": 1,
+      "explanation": "Middle Eastern/Iranian Americans can be legally white yet face discrimination.",
+      "itemIds": [
+        "item-31"
+      ]
+    },
+    {
+      "id": "mc-35",
+      "prompt": "What does the racial hinge example show?",
+      "options": [
+        "Ethnicity is inherently hierarchical",
+        "A court ruling on one group’s whiteness can shift how adjacent groups are classified",
+        "Legal whiteness prevents social discrimination",
+        "Race is biological"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lecture contrasts Armenian Christian and Persian Zoroastrian cases to show classifications can affect adjacent groups.",
+      "itemIds": [
+        "item-31"
+      ]
+    },
+    {
+      "id": "mc-36",
+      "prompt": "What is the date range for the Neo-Assyrian Period?",
+      "options": [
+        "330–30 BCE",
+        "1550–1100 BCE",
+        "900–610 BCE",
+        "530–330 BCE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The guide gives 900–610 BCE.",
+      "itemIds": [
+        "item-23"
+      ]
+    },
+    {
+      "id": "mc-37",
+      "prompt": "What is the date range for the Achaemenid Period?",
+      "options": [
+        "330–30 BCE",
+        "530–330 BCE",
+        "225–650 CE",
+        "900–610 BCE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The guide gives 530–330 BCE.",
+      "itemIds": [
+        "item-20"
+      ]
+    },
+    {
+      "id": "mc-38",
+      "prompt": "What is the date range for the Hellenistic Kingdoms?",
+      "options": [
+        "530–330 BCE",
+        "30 BCE–1400s CE",
+        "225–650 CE",
+        "330–30 BCE"
+      ],
+      "answerIndex": 3,
+      "explanation": "The guide gives 330–30 BCE.",
+      "itemIds": [
+        "item-22"
+      ]
+    },
+    {
+      "id": "mc-39",
+      "prompt": "What is the date range for the Sasanian Period?",
+      "options": [
+        "900–610 BCE",
+        "225–650 CE",
+        "30 BCE–1400s CE",
+        "early CE–850 CE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The guide gives 225–650 CE.",
+      "itemIds": [
+        "item-18"
+      ]
+    },
+    {
+      "id": "mc-40",
+      "prompt": "Which period is about 1100–650 BCE and associated with Kush strong at Napata?",
+      "options": [
+        "Old Babylonian Period",
+        "Early and Middle Napatan Period, Sudan",
+        "Late Antiquity",
+        "New Kingdom, Egypt"
+      ],
+      "answerIndex": 1,
+      "explanation": "The guide gives the range and Napata association.",
+      "itemIds": [
+        "item-16"
+      ]
+    }
+  ],
+  "ordering": [
+    {
+      "id": "order-01",
+      "prompt": "Order these periods by start date, earliest to latest.",
+      "periodIds": [
+        "neolithic",
+        "uruk",
+        "old-kingdom",
+        "old-babylonian"
+      ]
+    },
+    {
+      "id": "order-02",
+      "prompt": "Order these periods by start date, earliest to latest.",
+      "periodIds": [
+        "old-kingdom",
+        "old-babylonian",
+        "new-kingdom",
+        "napatan"
+      ]
+    },
+    {
+      "id": "order-03",
+      "prompt": "Order these periods by start date, earliest to latest.",
+      "periodIds": [
+        "new-kingdom",
+        "napatan",
+        "neo-assyrian",
+        "achaemenid"
+      ]
+    },
+    {
+      "id": "order-04",
+      "prompt": "Order these periods by start date, earliest to latest.",
+      "periodIds": [
+        "neo-assyrian",
+        "achaemenid",
+        "hellenistic",
+        "roman-byzantine"
+      ]
+    },
+    {
+      "id": "order-05",
+      "prompt": "Order these periods by start date, earliest to latest.",
+      "periodIds": [
+        "hellenistic",
+        "roman-byzantine",
+        "late-antiquity",
+        "sasanian"
+      ]
+    },
+    {
+      "id": "order-06",
+      "prompt": "Order these Mesopotamian periods, earliest to latest.",
+      "periodIds": [
+        "uruk",
+        "old-babylonian",
+        "neo-assyrian"
+      ]
+    },
+    {
+      "id": "order-07",
+      "prompt": "Order these Egypt and Sudan periods by start date, earliest to latest.",
+      "periodIds": [
+        "old-kingdom",
+        "new-kingdom",
+        "napatan"
+      ]
+    },
+    {
+      "id": "order-08",
+      "prompt": "Order these periods by start date, earliest to latest.",
+      "periodIds": [
+        "achaemenid",
+        "hellenistic",
+        "roman-byzantine",
+        "late-antiquity"
+      ]
+    }
+  ]
+}

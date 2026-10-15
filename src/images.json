@@ -1,0 +1,191 @@
+{
+  "item-01": {
+    "name": "Account of the Deeds of Ardashir",
+    "url": null,
+    "placeholder": true,
+    "label": "Sasanian-era literary account; no suitable Commons image confidently identified."
+  },
+  "item-02": {
+    "name": "Alexander the Great",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20the%20Great%20mosaic.jpg",
+    "credit": "Brandmeister (Wikimedia Commons)",
+    "license": "Public domain (faithful reproduction of ancient mosaic)",
+    "source": "https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic.jpg"
+  },
+  "item-03": {
+    "name": "Amarna",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Remains_of_the_ancient_city_Amarna_1.jpg/960px-Remains_of_the_ancient_city_Amarna_1.jpg",
+    "credit": "Leon petrosyan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Remains_of_the_ancient_city_Amarna_1.jpg",
+    "description": "Remains of the ancient city of Amarna.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-04": {
+    "name": "Ashurnasirpal II's Banquet Stele",
+    "url": null,
+    "placeholder": true,
+    "label": "Exact banquet stele image not confidently identified; avoid confusing it with Ashurbanipal's banquet relief."
+  },
+  "item-05": {
+    "name": "Throneroom and courtyard reliefs of Ashurnasirpal II",
+    "url": null,
+    "placeholder": true,
+    "label": "Many relief scenes exist; no specific scene selected."
+  },
+  "item-06": {
+    "name": "Beveled-rim bowls",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/British_Museum_Middle_east_14022019_Beveled_rim_bowl_Nineveh_Late_Uruk_Period_3672.jpg/960px-British_Museum_Middle_east_14022019_Beveled_rim_bowl_Nineveh_Late_Uruk_Period_3672.jpg",
+    "credit": "Vassil",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:British_Museum_Middle_east_14022019_Beveled_rim_bowl_Nineveh_Late_Uruk_Period_3672.jpg",
+    "description": "Beveled-rim bowl from Nineveh, Late Uruk period, British Museum.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-07": {
+    "name": "Bulla and tokens",
+    "url": null,
+    "placeholder": true,
+    "label": "No Commons file confidently matched."
+  },
+  "item-08": {
+    "name": "Dead Sea Scrolls",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Psalms_Scroll.jpg/960px-Psalms_Scroll.jpg",
+    "credit": "Israel Antiquities Authority (1993; photographer unnamed)",
+    "license": "Public domain",
+    "license_url": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Psalms_Scroll.jpg",
+    "description": "The Psalms Scroll, one of the Dead Sea Scrolls.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-09": {
+    "name": "Çatalhöyük",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_02.jpg/960px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_02.jpg",
+    "credit": "Murat Özsoy 1958",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_02.jpg",
+    "description": "Photograph of the Çatalhöyük archaeological site.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-10": {
+    "name": "Cyrus Cylinder",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyrus%20Cylinder%20BM%20ME90920.jpg",
+    "credit": "Marie-Lan Nguyen (Wikimedia Commons)",
+    "license": "CC BY-SA (see Commons file page for version)",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyrus_Cylinder_BM_ME90920.jpg"
+  },
+  "item-11": {
+    "name": "Hammurabi's stele",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/960px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+    "credit": "Mbzt",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+    "description": "Louvre stele of Hammurabi, front face.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-12": {
+    "name": "Investiture of Ardashir I at Naqsh-e Rostam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/171206yd_Naqsh-e_Rostam_Investiture_d%27Ardashir_Ier.jpg/960px-171206yd_Naqsh-e_Rostam_Investiture_d%27Ardashir_Ier.jpg",
+    "credit": "Perri.G",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:171206yd_Naqsh-e_Rostam_Investiture_d%27Ardashir_Ier.jpg",
+    "description": "Naqsh-e Rostam bas-relief depicting the investiture of Ardashir I.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-13": {
+    "name": "Isaiah 44–45",
+    "url": null,
+    "placeholder": true,
+    "label": "Text passage; no specific manuscript image selected."
+  },
+  "item-14": {
+    "name": "Jewish/Hebrew Bible",
+    "url": null,
+    "placeholder": true,
+    "label": "No specific manuscript image selected."
+  },
+  "item-15": {
+    "name": "Kerma elite tomb",
+    "url": null,
+    "placeholder": true,
+    "label": "No tomb image confidently matched to the specific Kerma elite tomb."
+  },
+  "item-16": {
+    "name": "Kush/Nubia",
+    "url": null,
+    "placeholder": true,
+    "label": "Region/kingdom; no specific image selected."
+  },
+  "item-17": {
+    "name": "Khufu's Great Pyramid",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pyramid_of_Cheops_-_side.jpg/960px-Pyramid_of_Cheops_-_side.jpg",
+    "credit": "Kallerna",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pyramid_of_Cheops_-_side.jpg",
+    "description": "A photograph of the Great Pyramid of Khufu.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-18": {
+    "name": "Magic Bowls",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Incantation_bowl%2C_from_Babylon%2C_Iraq._Aramaic_inscription._4th_to_7th_century_CE._Pergamon_Museum.jpg/960px-Incantation_bowl%2C_from_Babylon%2C_Iraq._Aramaic_inscription._4th_to_7th_century_CE._Pergamon_Museum.jpg",
+    "credit": "Osama Shukir Muhammed Amin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Incantation_bowl%2C_from_Babylon%2C_Iraq._Aramaic_inscription._4th_to_7th_century_CE._Pergamon_Museum.jpg",
+    "description": "Babylonian Aramaic incantation bowl from the Pergamon Museum; generic incantation bowl depiction.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-19": {
+    "name": "Paul's Letter to the Galatians",
+    "url": null,
+    "placeholder": true,
+    "label": "Text; no specific manuscript image selected."
+  },
+  "item-20": {
+    "name": "Persepolis Reliefs",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Persepolis_stairs_of_the_Apadana_relief.jpg/960px-Persepolis_stairs_of_the_Apadana_relief.jpg",
+    "credit": "Phillip Maiwald (Nikopol)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Persepolis_stairs_of_the_Apadana_relief.jpg",
+    "description": "Detail of relief on the eastern stairs of the Apadana at Persepolis.",
+    "verified": "HTTP GET 200/206; Wikimedia Commons imageinfo/extmetadata"
+  },
+  "item-21": {
+    "name": "Plaque of Akhenaten and Nefertiti under the Aten",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Relief_depicting_Akhenaton_and_Nefertiti_with_three_of_their_daughters_under_the_rays_of_Aton_01.jpg/960px-Relief_depicting_Akhenaton_and_Nefertiti_with_three_of_their_daughters_under_the_rays_of_Aton_01.jpg",
+    "credit": "ArchaiOptix (Wikimedia Commons)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Relief_depicting_Akhenaton_and_Nefertiti_with_three_of_their_daughters_under_the_rays_of_Aton_01.jpg",
+    "description": "Relief depicting Akhenaten and Nefertiti with three daughters beneath the rays of Aten; visual match confirmed.",
+    "verified": "HTTP GET 200; visually inspected"
+  },
+  "item-22": {
+    "name": "Seleucid statue of Herakles-Bahram",
+    "url": null,
+    "placeholder": true,
+    "label": "No statue image confidently matched."
+  },
+  "item-23": {
+    "name": "Shalmaneser III's Black Obelisk",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Neo-Assyrian%20Black%20Limestone%20Obelisk%20of%20Shalmaneser%20III%2C%20Nimrud%2C%20825%20BC%20-%2035725097223.jpg",
+    "credit": "See Commons file page",
+    "license": "CC0 1.0 (per Commons file page)",
+    "source": "https://commons.wikimedia.org/wiki/File:Neo-Assyrian_Black_Limestone_Obelisk_of_Shalmaneser_III,_Nimrud,_825_BC_-_35725097223.jpg"
+  },
+  "item-24": {
+    "name": "Uruk vase",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon%20Museum%20Ritual%20vase%20%28replica%29%20from%20Uruk%208061.jpg",
+    "credit": "Neoclassicism Enthusiast (Wikimedia Commons)",
+    "license": "CC BY-SA 4.0 (per Commons file page); replica",
+    "source": "https://commons.wikimedia.org/wiki/File:Pergamon_Museum_Ritual_vase_(replica)_from_Uruk_8061.jpg",
+    "description": "Replica of the Uruk/Warka ritual vase, explicitly identified as a replica in the Commons file title."
+  }
+}
