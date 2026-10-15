@@ -1,0 +1,33 @@
+MIDEAST 200 Map Quiz Locations
+Source: IDs.pdf (original class list).
+
+1. Tigris River
+2. Euphrates River
+3. Nile River
+4. Oxus River (Amu Darya)
+5. Indus River
+6. Black Sea
+7. Aegean Sea
+8. Mediterranean Sea (a.k.a. the White Sea)
+9. Red Sea
+10. Indian Ocean
+11. Caspian Sea
+12. The (Arabian/Persian) Gulf
+13. Balkan Mtns.
+14. Caucasus Mtns.
+15. Zagros Mtns.
+16. Alborz Mtns.
+17. Iranian Plateau
+18. Greater Egypt-Sudan
+19. Greater Syria
+20. Sumer / Babylonia / al-Iraq
+21. Assyria / Jazira
+22. Greater Armenia
+23. Georgia
+24. Anatolia / Rum
+25. Fars / Pars
+26. Jibal
+27. Transoxania
+28. Khorasan
+29. Hijaz
+30. Yemen

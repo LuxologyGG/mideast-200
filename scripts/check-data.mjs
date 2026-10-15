@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {mapLocations} from '../src/map-data.js';
 const read=name=>JSON.parse(fs.readFileSync(new URL('../src/'+name+'.json',import.meta.url)));
 const data=read('data'),questions=read('questions'),images=read('images');
 const all=[...data.periods,...data.items],ids=new Set(all.map(x=>x.id));
@@ -18,4 +19,11 @@ for(const q of questions.ordering){assert.deepEqual(q.periodIds,[...q.periodIds]
 assert.equal(Object.keys(images).length,24);
 for(const [id,image] of Object.entries(images)){assert.equal(all.find(c=>c.id===id).name,image.name);if(image.url)assert(image.source&&image.license&&image.credit);else assert(image.placeholder&&image.label);}
 assert(!JSON.stringify(data).includes('notes.granola.ai'));
-console.log('46 cards, 88 questions, 24 image slots: course data checks passed.');
+assert.equal(mapLocations.length,30);
+assert.equal(new Set(mapLocations.map(item=>item.id)).size,30);
+assert.equal(mapLocations.filter(item=>item.category==='water').length,12);
+assert.equal(mapLocations.filter(item=>item.category==='terrain').length,5);
+assert.equal(mapLocations.filter(item=>item.category==='region').length,13);
+for(const item of mapLocations){assert(item.name);assert(Array.isArray(item.aliases));assert(item.x>0&&item.x<1&&item.y>0&&item.y<1);assert(item.rx>0&&item.ry>0);assert(item.mask.w>0&&item.mask.h>0);}
+assert(fs.existsSync(new URL('../public/maps/course-map.webp',import.meta.url)));
+console.log('46 cards, 88 questions, 24 image slots, 30 map locations: course data checks passed.');
