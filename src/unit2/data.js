@@ -162,12 +162,12 @@ export const IDS = {
     d2: 'Goods and ideas moved both ways: Chinese cloud and dragon motifs in Ilkhanid art, Chinese medicine translated into Persian, and Buddhist temples built by the Ilkhans.',
     sig: 'Shows it was "more than just silk": a network of knowledge and exchange that let ideas, art and institutions travel, even after Mongol destruction in Khurasan and Iraq.',
     hook: 'More than silk: medicine, motifs, scripts.'},
-  coffee: {name: 'Coffee House', cls: 20, kind: 'concept', fromRoadmap: true,
-    intro: 'A new urban institution in Safavid Iran (1501–1736), especially in the capital Isfahan.',
-    d1: 'Became possible with tobacco from the Americas and coffee from Yemen.',
-    d2: 'A key place to socialize and hear storytellers perform the Shahnameh (naqqali).',
-    sig: 'Helped cultivate new forms of urban life alongside the bazaar, the place to see and be seen next to the congregational mosque.',
-    hook: 'Coffee from Yemen, stories from the Shahnameh.'},
+  coffee: {name: 'Coffee House', cls: 20, kind: 'concept',
+    intro: 'A new urban institution in Safavid Iran (1501–1736), especially in the capital Isfahan, described in Semnani\'s Guide for Strolling (about 1650).',
+    d1: 'Coffee came from Ethiopia by way of Yemen (Mokha), where Sufis drank it to stay awake for dhikr, and tobacco came through European New World trade.',
+    d2: 'In Isfahan the coffee houses sat in arcades open to both the bazaar and the Naqsh-e Jahan square, with music and Shahnameh storytelling.',
+    sig: 'Shows new forms of sociability and urban life in the early modern city, places that fostered friendship and the "dialogic self," spread through Sufi networks.',
+    hook: 'Sufi coffee, Shahnameh stories, the square next door.'},
   suleiman: {name: 'Suleiman\'s royal tiara and letter to the King of France', cls: 21, kind: 'artifact', pending: true,
     intro: '', d1: '', d2: '', sig: '',
     hook: 'Fill in after Class 21 (Thu 11/12).'}
@@ -260,12 +260,18 @@ export const CLASSES = {
       {h: 'Four paths', p: ['Sufism is not a religion or a sect but a method that complements other paths.'], visual: {type: 'flow', steps: ['Sunna: way of the Prophet', 'Shari\'a: knowledge by reason (outward)', 'Tariqa: walking the path (inward)', 'Haqiqa: the Real']}},
       {h: 'Orders and lodges', id: 'khanaqah', p: ['Teachers and followers form orders (tariqas) with chains of leadership, rites and costumes.', 'The khanaqah (Sufi lodge), funded by endowments, parallels the madrasa: together the "hardware of Sunnism."', 'Why it spread (Green): diversification, institutionalization, sanctification, vernacularization. Practices: dhikr and sama\'.'], visual: {type: 'compare', left: {h: 'Madrasa', items: ['Professors', 'Shari\'a, the outward path', 'Schools of law (madhhabs)']}, right: {h: 'Khanaqah', items: ['Sufi masters (shaykhs)', 'Tariqa, the inward path', 'Sufi orders (tariqas)']}}}
     ]},
-  20: {title: 'Social Life and Urbanity in Safavid Iran', date: 'Tue 11/10', pending: 'Built from the Class 20 roadmap only. Add your lecture notes after class.', guiding: ['What were the major institutions of urban life in the early modern period?', 'How did these institutions help individuals cultivate new understandings of space, time, and society?'],
+  20: {title: 'Social Life and Urbanity in Safavid Iran', date: 'Tue 11/10', guiding: ['What were the major institutions of urban life in the early modern period?', 'How did these institutions help individuals cultivate new understandings of space, time, and society?'],
     ids: ['coffee'],
     beats: [
-      {h: 'The Safavids (1501–1736)', p: ['A dynasty that grew out of a Shi\'i-Sufi order and ruled Iran.', 'Shah Isma\'il (d. 1524), founder, seen by followers as a reincarnation of Ali. The Qizilbash ("red heads") were Anatolian Turkmen who served as its military arm.', 'Shah Abbas I (d. 1629) moved the capital to Isfahan.']},
-      {h: 'Context', p: ['The first hijri millennium (1000 AH = 1590–91 CE) brought apocalyptic expectations of a Mahdi-king and cosmic renewal (millenarianism).', 'Shi\'i ulema were brought into the Safavid religious establishment, slowly converting Iranians to Shi\'ism.', 'Sufi orders link bazaar and court. European ("farangi") merchants and artists arrive.']},
-      {h: 'Urban institutions', id: 'coffee', p: ['Bazaar: one of the most important spaces of a city, a place to see and be seen, usually next to the congregational mosque.', 'Coffeehouse: tobacco from the Americas and coffee from Yemen make it the place to socialize and hear the Shahnameh.', 'Shahrashub: a playful poetry genre describing a city\'s beautiful residents.']}
+      {h: 'Sufi orders after the Mongols', p: ['Green\'s four keys to Sufi popularity: diversification, institutionalization (like a franchise), sanctification (lineages back to the Prophet), vernacularization (local places and languages).', 'After the Mongol conquest, networks of orders and shrines shape society. Most people experience Islam through holy men and their bodies, shrines become pilgrimage centers, and Sufi leadership becomes hereditary.', 'Azfar Moin: sacred authority for most people was concrete and embodied, not abstract and textual.']},
+      {h: 'Four kinds of authority', p: ['By 1500 there are several sources of authority. The question the Safavids answer: what if one person brought them all together?'], visual: {type: 'tree', root: 'Who has authority?', children: [{n: 'Sultan', s: 'The court, divine appointment'}, {n: 'Scholar', s: 'The madrasa, a degree'}, {n: 'Sufi master', s: 'The khanaqah, designation'}, {n: 'Imam / mahdi', s: 'All of the above, lineage from Ali'}]}},
+      {h: 'The "millennial moment"', p: ['Millenarianism: expectations of cosmic renewal, not just among Muslims. Messianism: a savior who ends injustice.', 'Rulers present themselves as spiritual guide and material lord at once: mahdi (Shi\'i), renewer or mujaddid (Sunni), spiritual axis or qutb (Sufi), divinely appointed king (Persianate).', 'The Great Conjunction of Jupiter and Saturn: some astrologers said Islam would wane 960 years after its birth (1582/83 CE).']},
+      {h: 'Rise of the Safavids', p: ['Start as a Sufi order in Ardabil (1301) with Persian, Kurdish and Turkic members. Become a messianic movement (1447).', 'Qizilbash ("red heads," for their headgear): Anatolian Turkmen who join as the order\'s military arm.', 'Empire in 1501 under Shah Isma\'il (r. 1501–24), seen by followers as a reincarnation of Ali. His poems (as Khata\'i) say "I am the shah calling upon you."'], visual: {type: 'timeline', events: [{y: 1301, t: 'Sufi order at Ardabil'}, {y: 1447, t: 'Messianic movement'}, {y: 1501, t: 'Empire, Shah Isma\'il'}, {y: 1588, t: 'Shah Abbas'}, {y: 1650, t: 'Guide for Strolling'}]}},
+      {h: 'Why Ali?', p: ['First imam (Shi\'i lineage), first saint or wali (Sufi lineage), and warrior-hero of Islam (kingly model).', 'So claiming Ali\'s essence combined every kind of authority.']},
+      {h: 'From messiah to institutions', p: ['Gradual "Shi\'ification" of Iran: Shi\'i scholars brought from Lebanon and Bahrain, marriage into scholarly families, new rituals, increasingly rigid sectarian positions.', 'Shah Abbas (r. 1588–1629) handles a rival messianic claim at 1000 AH: he "abdicates," crowns the rival for 3 days, executes him on the 4th (1593), and is re-crowned.', 'Reforms: capital moved to Isfahan, an army of Georgian and Circassian captives to counter the Qizilbash, 150,000 Armenians resettled in New Julfa to capture their trade network.']},
+      {h: 'The Guide for Strolling in Isfahan (about 1650)', p: ['A poet, Rukn al-Din Semnani, describes a day in the capital for friends back home in Semnan, urging them to visit and build similar cities.', 'Tour stops: the bazaar, coffee houses, the mosque, the Naqsh-e Jahan ("Image of the World") square, the Si-o-se Bridge.', 'Themes: sight, smell and taste, new people and products, beauty, and friendship.']},
+      {h: 'Coffee houses', id: 'coffee', p: ['Coffee: grown in Ethiopia, first drunk in Yemen in the 1400s (the port of Mokha gives us "mocha"), used by Sufis to stay awake for dhikr, spread by Sufi networks and the hajj.', 'Tobacco arrives through European New World trade. Hookahs are fashionable.', 'Coffee houses sat in arcades open to both the bazaar and the square: music, Shahnameh storytelling, new kinds of sociability and civic life.']},
+      {h: 'Wine, beauty and friendship', p: ['Wine: drunk at court as part of the "feasting and fighting" ethos, taverns run by Jews and Armenian Christians, regulation aimed at public drinking more than drinking itself.', 'Safavid art shows beauty and desire as gender-neutral: lovers with near-identical faces, the beautiful coffee server, Shah Abbas and his cupbearer.', 'The "dialogic self" (Kia): selfhood depends on relationships, not the autonomous self of European philosophy. The square is huge (about 15 football fields), with polo, parades and clock towers bringing new rhythms of time.']}
     ]},
   21: {title: 'The New Rome, the New Caliphate: The Ottomans and Universal Empire', date: 'Thu 11/12', pending: 'Slides not posted yet. Half of Class 21 is review, so add your notes after class.', guiding: [], ids: ['suleiman'], beats: []}
 };
@@ -368,15 +374,23 @@ export const QUESTIONS = [
   {id: 'q20a', cls: 20, type: 'mc', prompt: 'The Qizilbash were:', options: ['Anatolian Turkmen who served as the Safavid military arm', 'Persian bureaucrats', 'European merchants', 'Sufi poets'], answer: 0, why: '"Red heads," for their headgear.'},
   {id: 'q20b', cls: 20, type: 'mc', prompt: 'Which Safavid shah moved the capital to Isfahan?', options: ['Shah Isma\'il', 'Shah Abbas I', 'Abbas II', 'Shah Tahmasp'], answer: 1, why: 'Abbas I (d. 1629).'},
   {id: 'q20c', cls: 20, type: 'tf', prompt: 'Coffeehouses in Safavid Iran were places to socialize and hear Shahnameh storytelling.', answer: true, why: 'Coffee from Yemen, tobacco from the Americas.'},
+  {id: 'q20e', cls: 20, type: 'mc', prompt: 'The Safavids began as:', options: ['A Sufi order in Ardabil', 'A Mongol army', 'An Ottoman province', 'A merchant guild'], answer: 0, why: 'Sufi order (1301), messianic movement (1447), empire (1501).'},
+  {id: 'q20f', cls: 20, type: 'tf', prompt: 'Shah Isma\'il\'s followers saw him as a reincarnation of Ali.', answer: true, why: 'His poems as Khata\'i claim the essence of Ali.'},
+  {id: 'q20g', cls: 20, type: 'mc', prompt: 'Why was Ali such a useful figure for Safavid authority?', options: ['He founded Isfahan', 'He was first imam, first saint, and a warrior-hero all at once', 'He wrote the Shahnameh', 'He was a Mongol khan'], answer: 1, why: 'Shi\'i, Sufi and kingly lineages in one person.'},
+  {id: 'q20h', cls: 20, type: 'tf', prompt: 'Coffee first spread as a drink through Sufi networks, who used it to stay awake during dhikr.', answer: true, why: 'Ethiopia, then Yemen (Mokha) in the 1400s, spread by Sufis and the hajj.'},
+  {id: 'q20i', cls: 20, type: 'mc', prompt: 'Who wrote the Guide for Strolling in Isfahan (about 1650)?', options: ['Shah Abbas', 'Rukn al-Din Semnani', 'Ferdowsi', 'Nasir-i Khusraw'], answer: 1, why: 'A poet writing for friends back home in Semnan.'},
+  {id: 'q20j', cls: 20, type: 'mc', prompt: 'Shah Abbas resettled about 150,000 Armenians in New Julfa to:', options: ['Convert them', 'Capture their trade network', 'Build the army', 'Punish a revolt'], answer: 1, why: 'Armenian merchants ran trade routes from the Indian Ocean to the Mediterranean.'},
+  {id: 'q20k', cls: 20, type: 'tf', prompt: 'Safavid art usually shows beauty as strictly gendered, with very different faces for men and women.', answer: false, why: 'Beauty and desire are gender-neutral. Lovers often have near-identical faces.'},
+  {id: 'q20l', cls: 20, type: 'mc', prompt: 'Safavid rulers presented themselves as mahdi, renewer, spiritual axis and divinely appointed king at once. This is called:', options: ['Sectarianism', 'Millenarianism and messianism', 'Orientalism', 'Shu\'ubiyya'], answer: 1, why: 'The "millennial moment" around 1000 AH.'},
   {id: 'q20d', cls: 20, type: 'mc', prompt: 'The year 1000 AH (1590–91 CE) brought expectations of:', options: ['A new caliph in Baghdad', 'A Mahdi-king and cosmic renewal', 'Mongol return', 'Ottoman conversion'], answer: 1, why: 'Millenarianism.'}
 ];
 
 export const DAYS = [
-  {n: 1, date: '2026-11-10', label: 'Tue 11/10', time: '4:30–5:30 PM', classes: [13, 14, 15], chrono: ['sasanian', 'umma', 'umayyad'], retestLabel: 'The 11/9 quiz topics: Hijra, Umma Document, believers vs submitters, Yarmuk and Qadisiya, Abd al-Malik, Dome inscriptions, Hülegü 1258, Sunna/Shari\'a/Tariqa.'},
-  {n: 2, date: '2026-11-11', label: 'Wed 11/11', time: '5:45–6:45 PM', classes: [16, 17], chrono: ['abbasid', 'fatimids']},
-  {n: 3, date: '2026-11-12', label: 'Thu 11/12', time: '8:00–8:45 PM', classes: [18, 19], chrono: ['seljuks', 'mongols']},
-  {n: 4, date: '2026-11-14', label: 'Sat 11/14', time: '2:00–3:30 PM', classes: [20, 21], chrono: ['safavids', 'ottomans']},
-  {n: 5, date: '2026-11-15', label: 'Sun 11/15', time: '2:00–3:30 PM', kind: 'full'},
+  {n: 1, date: '2026-11-15', label: 'Sun 11/15', time: '5:00–6:15 PM', classes: [13, 14, 15], chrono: ['sasanian', 'umma', 'umayyad'], retestLabel: 'Core facts from Classes 14, 15 and 19: Hijra, Umma Document, believers vs submitters, Yarmuk and Qadisiya, Abd al-Malik, Dome inscriptions, Hülegü 1258, Sunna/Shari\'a/Tariqa.'},
+  {n: 2, date: '2026-11-15', label: 'Sun 11/15', time: '6:30–7:45 PM', classes: [16, 17], chrono: ['abbasid', 'fatimids']},
+  {n: 3, date: '2026-11-15', label: 'Sun 11/15', time: '8:00–9:00 PM', classes: [18, 19], chrono: ['seljuks', 'mongols']},
+  {n: 4, date: '2026-11-16', label: 'Mon 11/16', time: '12:30–1:30 PM', classes: [20, 21], chrono: ['safavids', 'ottomans']},
+  {n: 5, date: '2026-11-16', label: 'Mon 11/16', time: '4:15–5:15 PM', kind: 'full'},
   {n: 6, date: '2026-11-16', label: 'Mon 11/16', time: '7:00–8:30 PM', kind: 'weak'},
   {n: 7, date: '2026-11-17', label: 'Tue 11/17', time: '12:30–12:50 PM', kind: 'skim'}
 ];

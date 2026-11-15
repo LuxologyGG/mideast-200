@@ -9,7 +9,7 @@ const qById = Object.fromEntries(QUESTIONS.map(q => [q.id, q]));
 const chronoById = Object.fromEntries(CHRONO.map(c => [c.id, c]));
 const blankDay = () => ({step: 0, dump: '', dumpStart: null, gaps: [], beat: {}, check: {}, retest: null, test: null, done: false});
 const todayKey = () => {const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;};
-const defaultDay = () => {const t = todayKey(); const hit = [...DAYS].reverse().find(d => d.date <= t); return hit ? hit.n : 1;};
+const defaultDay = () => {const t = todayKey(); const hit = DAYS.find(d => d.date === t) || [...DAYS].reverse().find(d => d.date <= t); return hit ? hit.n : 1;};
 const clock = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 const yr = v => {const m = String(v || '').match(/\d{3,4}/); return m ? Number(m[0]) : null;};
 const chronoOk = (c, a) => {const s = yr(a?.start), e = yr(a?.end); return s !== null && e !== null && Math.abs(s - c.start) <= 50 && Math.abs(e - c.end) <= 50;};
@@ -41,7 +41,7 @@ export default function Unit2() {
       <div><p className="eyebrow">UNIT 02 · MEDIEVAL AND EARLY MODERN · CLASSES 13–21</p><h1>One day at a time.</h1><p className="muted">Learn the day's classes, lock each one in with three right in a row, then take a mini test in the real format. {TEST.label}: {TEST.when}, {TEST.where}.</p></div>
     </header>
     <nav className="u2-days" aria-label="Study days">{DAYS.map(d => {const s = st.days[d.n]; const isToday = d.date === todayKey(); return <button key={d.n} className={`u2-day ${d.n === dayN ? 'active' : ''} ${s?.done ? 'done' : ''}`} onClick={() => setSt(x => ({...x, day: d.n}))}>
-      <span className="u2-day-n">{s?.done ? <Check size={13}/> : `0${d.n}`}</span><span className="u2-day-t"><b>{d.label}</b><small>{dayTitle(d)}</small></span>{isToday && <i className="u2-today">TODAY</i>}
+      <span className="u2-day-n">{s?.done ? <Check size={13}/> : `0${d.n}`}</span><span className="u2-day-t"><b>{d.label} · {d.time.split('–')[0]}</b><small>{dayTitle(d)}</small></span>{isToday && <i className="u2-today">TODAY</i>}
     </button>;})}</nav>
     <div className="u2-steps" role="list">{steps.map((s, i) => <button role="listitem" key={i} className={`${i === step ? 'on' : ''} ${i < step ? 'past' : ''}`} onClick={() => go(i)}><span>{i + 1}</span>{s.label}</button>)}</div>
     <AnimatePresence mode="wait"><motion.div key={`${dayN}-${step}`} initial={{opacity: 0, y: 12}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -8}} transition={{duration: .22}}>
@@ -70,7 +70,7 @@ function stepsFor(day) {
   if (day.kind === 'full') return [{kind: 'plan', label: 'Plan'}, {kind: 'full', label: 'Practice test'}, {kind: 'end', label: 'Done'}];
   if (day.kind === 'weak') return [{kind: 'plan', label: 'Plan'}, {kind: 'weakq', label: 'Missed questions'}, {kind: 'weakid', label: 'Short IDs'}, {kind: 'end', label: 'Done'}];
   if (day.kind === 'skim') return [{kind: 'skim', label: 'Skim'}];
-  return [{kind: 'plan', label: 'Plan'}, {kind: 'dump', label: 'Brain dump'}, ...day.classes.map(c => ({kind: 'learn', cls: c, label: `Class ${c}`})), {kind: 'retest', label: 'Retest'}, {kind: 'test', label: 'Mini test'}, {kind: 'end', label: 'Done'}];
+  return [{kind: 'plan', label: 'Plan'}, ...day.classes.map(c => ({kind: 'learn', cls: c, label: `Class ${c}`})), {kind: 'retest', label: 'Retest'}, {kind: 'test', label: 'Mini test'}, {kind: 'end', label: 'Done'}];
 }
 
 /* ---------- Plan ---------- */
@@ -169,7 +169,7 @@ function IdCard({id, compact}) {
 function Visual({v}) {
   if (v.type === 'timeline') {
     const ys = v.events.map(e => e.y), lo = Math.min(...ys), hi = Math.max(...ys), span = Math.max(1, hi - lo);
-    return <div className="u2-tl"><div className="u2-tl-line"/>{v.events.map((e, i) => <motion.div key={i} className={`u2-tl-ev ${i % 2 ? 'down' : ''}`} style={{left: `${4 + (e.y - lo) / span * 92}%`}} initial={{opacity: 0, scale: .6}} animate={{opacity: 1, scale: 1}} transition={{delay: .15 + i * .12}}><i/><b>{e.y}</b><span>{e.t}</span></motion.div>)}</div>;
+    return <div className="u2-tl"><div className="u2-tl-line"/>{v.events.map((e, i) => <motion.div key={i} className={`u2-tl-ev ${i % 2 ? 'down' : ''}`} style={{left: `${7 + (e.y - lo) / span * 86}%`}} initial={{opacity: 0, scale: .6}} animate={{opacity: 1, scale: 1}} transition={{delay: .15 + i * .12}}><i/><b>{e.y}</b><span>{e.t}</span></motion.div>)}</div>;
   }
   if (v.type === 'compare') return <div className="u2-cmp">{[v.left, v.right].map((side, i) => <motion.div key={i} className="u2-cmp-col" initial={{opacity: 0, y: 8}} animate={{opacity: 1, y: 0}} transition={{delay: .2 + i * .15}}>{side.h && <b>{side.h}</b>}<ul>{side.items.map((x, j) => <li key={j}>{x}</li>)}</ul></motion.div>)}</div>;
   if (v.type === 'flow') return <div className="u2-flow">{v.steps.map((s, i) => <React.Fragment key={i}><motion.div className="u2-flow-s" initial={{opacity: 0, y: 6}} animate={{opacity: 1, y: 0}} transition={{delay: .15 + i * .14}}>{s}</motion.div>{i < v.steps.length - 1 && <ArrowRight className="u2-flow-a" size={16}/>}</React.Fragment>)}</div>;
