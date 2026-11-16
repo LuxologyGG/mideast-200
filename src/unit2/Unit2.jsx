@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {AnimatePresence, motion} from 'motion/react';
 import {ArrowLeft, ArrowRight, Check, Clipboard, Clock3, Flame, PenLine, RotateCcw, Sparkles, X} from 'lucide-react';
-import {CHRONO, CLASSES, DAYS, IDS, QUESTIONS, RUBRIC, TEST} from './data';
+import {CHRONO, CLASSES, DAYS, IDS, PLACES, QUESTIONS, RUBRIC, TEST} from './data';
 import {copyText, shuffle, useStoredState} from '../core';
 import './unit2.css';
 
@@ -38,7 +38,7 @@ export default function Unit2() {
 
   return <section className="u2">
     <header className="u2-head">
-      <div><p className="eyebrow">UNIT 02 · MEDIEVAL AND EARLY MODERN · CLASSES 13–21</p><h1>One day at a time.</h1><p className="muted">Learn the day's classes, lock each one in with three right in a row, then take a mini test in the real format. {TEST.label}: {TEST.when}, {TEST.where}.</p></div>
+      <div><p className="eyebrow">UNIT 02 · MEDIEVAL AND EARLY MODERN · CLASSES 13–21</p><h1>One day at a time.</h1><p className="muted">Learn the day's classes, lock each one in with 5 questions (3 easy, 2 hard), then take a mini test in the real format. {TEST.label}: {TEST.when}, {TEST.where}.</p></div>
     </header>
     <nav className="u2-days" aria-label="Study days">{DAYS.map(d => {const s = st.days[d.n]; const isToday = d.date === todayKey(); return <button key={d.n} className={`u2-day ${d.n === dayN ? 'active' : ''} ${s?.done ? 'done' : ''}`} onClick={() => setSt(x => ({...x, day: d.n}))}>
       <span className="u2-day-n">{s?.done ? <Check size={13}/> : `0${d.n}`}</span><span className="u2-day-t"><b>{d.label} · {d.time.split('–')[0]}</b><small>{dayTitle(d)}</small></span>{isToday && <i className="u2-today">TODAY</i>}
@@ -146,14 +146,17 @@ function Learn({ctx, cls}) {
       <article className={`panel u2-beat ${b.myth ? 'myth' : ''}`}>
         <div className="row u2-beat-tags"><span className="chip">{bi + 1} / {beats.length}</span>{b.id && <span className="chip id">Short ID: {IDS[b.id].name}</span>}{b.myth && <span className="chip myth"><Flame size={12}/> Myth-buster</span>}{gap && <span className="chip gap">You missed this in your dump</span>}</div>
         <h2>{b.h}</h2>
-        <ul className="u2-points">{b.p.map((p, i) => <motion.li key={i} initial={{opacity: 0, x: -8}} animate={{opacity: 1, x: 0}} transition={{delay: .08 * i + .1}}>{p}</motion.li>)}</ul>
+        <div className={`u2-beat-body ${b.scene || b.img || b.map ? 'has-media' : ''}`}>
+          <ul className="u2-points">{b.p.map((p, i) => {const [ic, tx] = Array.isArray(p) ? p : [null, p]; return <motion.li key={i} className={ic ? 'ic' : ''} initial={{opacity: 0, x: -8}} animate={{opacity: 1, x: 0}} transition={{delay: .12 * i + .1}}>{ic && <motion.span className="u2-ic" initial={{scale: 0, rotate: -20}} animate={{scale: 1, rotate: 0}} transition={{delay: .12 * i + .15, type: 'spring', stiffness: 320, damping: 14}}>{ic}</motion.span>}<span>{tx}</span></motion.li>;})}</ul>
+          {(b.scene || b.img || b.map) && <div className="u2-media">{b.scene && <Stamp key={`${cls}-${bi}`} s={b.scene}/>}{b.img && <WikiImg title={b.img}/>}{b.map && <MiniMap key={`m${cls}-${bi}`} m={b.map}/>}</div>}
+        </div>
         {b.visual && <Visual v={b.visual}/>}
         {b.id && !IDS[b.id].pending && <IdCard id={b.id} compact/>}
       </article>
       <div className="row u2-learn-ctrl"><button className="button ghost" onClick={() => setBeat(bi - 1)} disabled={bi === 0}><ArrowLeft size={16}/> Previous</button><button className="button primary" onClick={() => setBeat(bi + 1)}>{bi === beats.length - 1 ? 'Check yourself' : 'Next'} <ArrowRight size={16}/></button></div>
     </div>;
   }
-  return <Streak key={cls} pool={pool} goal={3} title={`Class ${cls}: three right in a row`} state={ds.check[cls]} save={v => setDay(d => ({...d, check: {...d.check, [cls]: v}}))} mark={mark} onDone={next} onReview={() => setBeat(0)}/>;
+  return <Check5 key={cls} pool={pool} title={`Class ${cls}: 3 easy + 2 hard, all must be right`} state={ds.check[cls]} save={v => setDay(d => ({...d, check: {...d.check, [cls]: v}}))} mark={mark} onDone={next} onReview={() => setBeat(0)}/>;
 }
 
 function IdCard({id, compact}) {
@@ -162,6 +165,80 @@ function IdCard({id, compact}) {
   return <div className="u2-idcard">
     <button className="u2-idcard-h" onClick={() => setOpen(o => !o)}><PenLine size={14}/><b>How to write this ID</b><span className="muted">{open ? 'Hide' : 'Show'}</span></button>
     {open && <div className="u2-idgrid"><p><b>{t.kind === 'concept' ? 'Definition' : 'When + where'}<small>2 pts</small></b>{t.intro}</p><p><b>Detail 1<small>1 pt</small></b>{t.d1}</p><p><b>Detail 2<small>1 pt</small></b>{t.d2}</p><p><b>Significance<small>1 pt</small></b>{t.sig}</p>{t.fromRoadmap && <span className="badge verify">From the roadmap, check against lecture</span>}</div>}
+  </div>;
+}
+
+
+/* ---------- Lesson media ---------- */
+const MAP_W = 1000, MAP_H = 706.65;
+const MAP_IMG = `${import.meta.env.BASE_URL}maps/course-map.webp`;
+const pt = name => {const p = PLACES[name]; return p ? {x: p[0] * MAP_W, y: p[1] * MAP_H} : null;};
+function MiniMap({m}) {
+  const pts = m.pins.map(([n, label]) => ({...pt(n), label})).filter(p => p.x !== undefined);
+  const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
+  let w = Math.max(...xs) - Math.min(...xs) + 260, h = Math.max(...ys) - Math.min(...ys) + 200;
+  if (w / h < 1.5) w = h * 1.5; else h = w / 1.5;
+  w = Math.min(w, MAP_W); h = Math.min(h, MAP_H);
+  const cx = (Math.max(...xs) + Math.min(...xs)) / 2, cy = (Math.max(...ys) + Math.min(...ys)) / 2;
+  const x0 = Math.max(0, Math.min(MAP_W - w, cx - w / 2)), y0 = Math.max(0, Math.min(MAP_H - h, cy - h / 2));
+  const k = w / 420;
+  return <figure className="u2-map"><svg viewBox={`${x0} ${y0} ${w} ${h}`} preserveAspectRatio="xMidYMid slice" role="img" aria-label={`Map: ${pts.map(p => p.label).join(', ')}`}>
+    <image href={MAP_IMG} x="0" y="0" width={MAP_W} height={MAP_H} preserveAspectRatio="none"/>
+    {(m.arrows || []).map(([a, b], i) => {const p = pt(a), q = pt(b); const mx = (p.x + q.x) / 2, my = Math.min(p.y, q.y) - Math.abs(q.x - p.x) * .25 - 20 * k; return <motion.path key={i} d={`M${p.x} ${p.y} Q${mx} ${my} ${q.x} ${q.y}`} fill="none" stroke="var(--accent)" strokeWidth={3 * k} strokeDasharray={`${8 * k} ${5 * k}`} initial={{pathLength: 0, opacity: 0}} animate={{pathLength: 1, opacity: 1}} transition={{delay: .5 + pts.length * .35, duration: 1.1}}/>;})}
+    {pts.map((p, i) => <motion.g key={i} initial={{opacity: 0, y: -14 * k}} animate={{opacity: 1, y: 0}} transition={{delay: .3 + i * .35, type: 'spring', stiffness: 260, damping: 12}}>
+      <circle cx={p.x} cy={p.y} r={9 * k} fill="var(--accent)" opacity=".25"><animate attributeName="r" values={`${7 * k};${16 * k};${7 * k}`} dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx={p.x} cy={p.y} r={5 * k} fill="var(--accent)" stroke="#111" strokeWidth={1.5 * k}/>
+      <text x={p.x + 9 * k} y={p.y - 7 * k} fontSize={13 * k} fontWeight="700" fill="#111" stroke="#fff" strokeWidth={3.5 * k} paintOrder="stroke">{p.label}</text>
+    </motion.g>)}
+  </svg></figure>;
+}
+const wikiCache = new Map();
+function WikiImg({title}) {
+  const [d, setD] = useState(() => wikiCache.get(title) ?? null);
+  useEffect(() => {
+    if (wikiCache.has(title)) {setD(wikiCache.get(title)); return;}
+    let live = true;
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, '_'))}`).then(r => r.ok ? r.json() : null).then(j => {const v = j?.thumbnail?.source ? {src: j.thumbnail.source.replace(/\/\d+px-/, '/500px-'), fallback: j.thumbnail.source, cap: j.title, url: j.content_urls?.desktop?.page} : false; wikiCache.set(title, v); if (live) setD(v);}).catch(() => {wikiCache.set(title, false); if (live) setD(false);});
+    return () => {live = false;};
+  }, [title]);
+  if (d === false) return null;
+  if (!d) return <div className="u2-photo skel"/>;
+  return <motion.figure className="u2-photo" initial={{opacity: 0, scale: .96}} animate={{opacity: 1, scale: 1}} transition={{duration: .5}}>
+    <img src={d.src} alt={d.cap} loading="lazy" onError={e => {if (e.currentTarget.src !== d.fallback) e.currentTarget.src = d.fallback; else {wikiCache.set(title, false); setD(false);}}}/>
+    <figcaption>{d.cap}{d.url && <a href={d.url} target="_blank" rel="noreferrer"> · Wikipedia</a>}</figcaption>
+  </motion.figure>;
+}
+function Stamp({s}) {
+  const [run, setRun] = useState(0);
+  return <figure className="u2-stamp" key={run}>
+    <motion.div className="u2-stamp-base" initial={{opacity: 0, y: 8}} animate={{opacity: 1, y: 0}} transition={{duration: .4}}>
+      <img src={MAP_IMG} alt=""/><span>{s.base}</span>
+      <motion.b className="u2-stamp-label" initial={{opacity: 0, scale: 2.4, rotate: -18}} animate={{opacity: 1, scale: 1, rotate: -8}} transition={{delay: .9, type: 'spring', stiffness: 380, damping: 16}}>{s.bad}</motion.b>
+      <svg className="u2-stamp-x" viewBox="0 0 100 100" preserveAspectRatio="none"><motion.path d="M18 22 L82 78" initial={{pathLength: 0}} animate={{pathLength: 1}} transition={{delay: 2, duration: .35}}/><motion.path d="M82 22 L18 78" initial={{pathLength: 0}} animate={{pathLength: 1}} transition={{delay: 2.35, duration: .35}}/></svg>
+    </motion.div>
+    <div className="u2-stamp-good">{s.good.map((g, i) => <motion.span key={i} initial={{opacity: 0, y: 10}} animate={{opacity: 1, y: 0}} transition={{delay: 3 + i * .3}}>{g}</motion.span>)}</div>
+    <button className="u2-replay" onClick={() => setRun(r => r + 1)}><RotateCcw size={12}/> Replay</button>
+  </figure>;
+}
+
+/* ---------- 5-question check: 3 easy + 2 hard, misses come back ---------- */
+function Check5({pool, title, state, save, mark, onDone, onReview}) {
+  const fresh = () => {const easy = shuffle(pool.filter(q => !q.hard)).slice(0, 3), hard = shuffle(pool.filter(q => q.hard)).slice(0, 2); const set = shuffle([...easy, ...hard]).map(q => q.id); return {set, queue: [...set], cleared: [], picked: null, total: 0, wrong: 0};};
+  const s = state?.set ? state : null;
+  useEffect(() => {if (!s) save(fresh());}); // eslint-disable-line react-hooks/exhaustive-deps
+  const q = s && s.queue.length ? qById[s.queue[0]] : null;
+  const answered = s && s.picked !== null && s.picked !== undefined;
+  const ok = answered && isRight(q, s.picked);
+  const done = s && !s.queue.length;
+  function pick(v) {if (answered || !q) return; const right = v === q.answer; mark(q.id, right); save({...s, picked: v, total: s.total + 1, wrong: s.wrong + (right ? 0 : 1)});}
+  function advance() {const [head, ...rest] = s.queue; const right = isRight(q, s.picked); save({...s, queue: right ? rest : [...rest, head], cleared: right ? [...s.cleared, head] : s.cleared, picked: null});}
+  useEffect(() => {const h = e => {if (!q || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return; if (!answered) {const n = Number(e.key); if (q.type === 'tf' && (n === 1 || n === 2)) pick(n === 1); if (q.type === 'mc' && n >= 1 && n <= q.options.length) pick(n - 1);} else if (e.key === 'Enter') advance();}; window.addEventListener('keydown', h); return () => window.removeEventListener('keydown', h);});
+  if (!s) return null;
+  if (done) return <article className="panel u2-card u2-win"><Sparkles size={22}/><h2>Locked in.</h2><p className="muted">All 5 right ({s.total} tries, {s.wrong} missed). Misses come back in the retest and on Weak spots day.</p><div className="row"><button className="button primary" onClick={onDone}>Next <ArrowRight size={16}/></button><button className="button ghost" onClick={() => save(fresh())}><RotateCcw size={14}/> New set of 5</button>{onReview && <button className="button ghost" onClick={onReview}>Reread the lesson</button>}</div></article>;
+  return <div className="u2-drill">
+    <div className="row justify-between u2-drill-top"><p className="eyebrow">{title}</p><div className="u2-five">{s.set.map(id => <motion.i key={id} className={`${qById[id].hard ? 'h' : ''} ${s.cleared.includes(id) ? 'on' : ''} ${id === q.id ? 'cur' : ''}`} animate={s.cleared.includes(id) ? {scale: [1, 1.35, 1]} : {}}>{qById[id].hard ? 'H' : 'E'}</motion.i>)}</div></div>
+    <Question q={q} picked={s.picked} onPick={pick}/>
+    {answered && <motion.div className={`u2-feedback ${ok ? 'ok' : 'no'}`} initial={{opacity: 0, y: 6}} animate={{opacity: 1, y: 0}}><b>{ok ? 'Right.' : 'Not quite. This one comes back at the end.'}</b> {q.why}<button className="button primary" onClick={advance}>Next question <ArrowRight size={16}/></button></motion.div>}
   </div>;
 }
 
@@ -202,7 +279,7 @@ function Question({q, picked, onPick, lockReveal}) {
   const reveal = answered && !lockReveal;
   const opts = q.type === 'tf' ? [true, false] : q.options.map((_, i) => i);
   const label = v => q.type === 'tf' ? (v ? 'True' : 'False') : q.options[v];
-  return <article className="panel u2-q"><span className="chip">{q.type === 'tf' ? 'True / false' : 'Multiple choice'} · Class {q.cls}</span><h3>{q.prompt}</h3><div className="u2-opts">{opts.map((v, i) => {const cls = reveal ? (v === q.answer ? 'right' : v === picked ? 'wrong' : 'fade') : v === picked ? 'picked' : ''; return <button key={String(v)} className={`u2-opt ${cls}`} onClick={() => onPick(v)} disabled={reveal}><kbd>{i + 1}</kbd>{label(v)}</button>;})}</div></article>;
+  return <article className="panel u2-q"><span className="chip">{q.type === 'tf' ? 'True / false' : 'Multiple choice'} · Class {q.cls}</span>{q.hard && <span className="chip hard">Hard</span>}<h3>{q.prompt}</h3><div className="u2-opts">{opts.map((v, i) => {const cls = reveal ? (v === q.answer ? 'right' : v === picked ? 'wrong' : 'fade') : v === picked ? 'picked' : ''; return <button key={String(v)} className={`u2-opt ${cls}`} onClick={() => onPick(v)} disabled={reveal}><kbd>{i + 1}</kbd>{label(v)}</button>;})}</div></article>;
 }
 
 /* ---------- Retest ---------- */
