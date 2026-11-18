@@ -1,28 +1,30 @@
-# MIDEAST 200 · Study space
-
-Interactive study for MIDEAST 200 Unit Tests 1 and 2, University of Michigan (Cross & DeGrado).
-
-**Unit 2 day plan:** https://luxologygg.github.io/mideast-200/#unit2
-
-Seven study days for Unit Test 2 (Tue 11/17), Classes 13–21. Each class day runs one linear flow: visual lessons per class (icon cues, course-map pins, Wikipedia photos, animated scenes), a 5-question check per class (3 easy, 2 hard, misses repeat until right), a spaced retest of earlier misses, and a mini test in the real format (true/false, multiple choice, chronology within 50 years, 2 of 4 short IDs self-scored on the 2/2/1 rubric). Sunday is a timed 30-minute full practice test, Monday drills only weak spots, Tuesday is a 10-minute skim. Content comes from the class slides, roadmaps and the Test 2 study guide; Class 20 is roadmap-only and Class 21 is pending until its slides post. Progress stays in browser local storage.
+# MIDEAST 200 study guide (Fall 2026)
 
 **Live site:** https://luxologygg.github.io/mideast-200/
 
-Six study modes: a zoomable timeline with placement, date, and ordering drills; artifact recognition in both directions; spaced repetition flashcards; timed short identification; a 30-minute practice exam; and a dashboard for missed items.
+An unofficial, self-paced study aid for MIDEAST 200: Introduction to the Middle East (University of Michigan, Fall 2026). It is not reviewed by the instructors and is not a substitute for the readings, lectures or discussion sections. Course files and readings are on Canvas.
 
-**Map quiz:** https://luxologygg.github.io/mideast-200/#map
+## What is on the site
 
-Map practice uses the exact 30-location list and class map recovered from the earlier `mideast-200-map-practice` Higgsfield site. The exercises were rebuilt inside this app, with study, click-to-locate, name recall, multiple choice, and test modes. Printed labels are hidden during practice; the annotated reference remains available in study mode. Click grading uses approximate zones around the course-map labels, not historical or political boundaries. Map progress is stored separately from the original 46 cards.
+- **Units → Classes → Sections → Tests**, in syllabus order. Every class page has its lesson (plain-language parts with maps, photos and diagrams), key terms with Arabic or Persian script, primary sources, the study-guide short IDs from that class, a 5-question practice check, and the syllabus reading list as citations only.
+- **Tests:** Map Quiz (study, find, name and a 10-minute timed test on the 30 course locations), Unit Test 1 and Unit Test 2 (practice tests in each study guide's section order, short-ID practice for every listed term with the 2/2/1 rubric, chronology drills), and the Final (format pending until its study guide posts; cumulative practice meanwhile).
+- **Study tools:** glossary, chronology (study-guide periods, reference timelines, dated events), map of every pinned place, flashcards with spaced review, and a review page of missed items.
+- Classes without posted slides are marked **pending** and show syllabus information only.
 
-The 46-card deck follows the supplied study guide and card list, with race and ethnicity wording informed by course lecture notes. Three items carry **Verify with slides** badges. Fourteen Wikimedia Commons images are credited in the image collection; ten entries use labeled placeholders. Progress and written drafts stay in browser local storage on the device.
+Progress is saved only in each visitor's browser (localStorage). Old links (`#unit2`, `#map`, `#timeline`, `#cards`, `#short`, `#exam`, `#weak`, `#images`) redirect to their new pages.
+
+## Sources
+
+Built from the course's own materials: the syllabus, lecture slides and class roadmaps, the two unit test study guides, and section handouts. Lessons paraphrase the slides; no slide images or slide text are copied, and readings are not summarized. Every lesson, term, short ID and question is tagged with the class and file it came from. Basemap: Natural Earth (public domain). Photos: Wikipedia and Wikimedia Commons, credited on the page.
 
 ## Development
 
 ```sh
 npm install
 npm run dev
-npm run check:data
+npm run check:data   # content checks (run in CI)
 npm run build
+node scripts/build-basemap.mjs   # regenerate src/generated/geo.js from Natural Earth
 ```
 
-Pushing to `main` builds and deploys with GitHub Actions. External image links and fonts require internet access.
+Content lives in `src/content/` (one module per unit, plus `schedule.js`, `chronology.js` and `places.js`). Pushing to `main` builds and deploys with GitHub Actions.
